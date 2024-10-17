@@ -203,7 +203,7 @@
              <div class="p-staff-detail__contentInner">
                <div class="p-staff-detail__contentWrapper">
                  <ul class="p-staff-detail__contentList">
-                   <li class="p-staff-detail__contentItem js-block01">
+                   <li id="item01" class="p-staff-detail__contentItem js-block01">
                      <h2 class="p-staff-detail__contentTitle">普段の業務内容について</h2>
                      <p class="p-staff-detail__text">TETOTEのコンサルティング本部で、ITコンサルタントとして勤務しています。主な業務内容は、以下の3つです。</p>
                      <br>
@@ -228,7 +228,7 @@
                        これらの業務を通して、クライアント企業のIT戦略の立案から実行までを支援し、課題解決に貢献しています。
                      </p>
                    </li>
-                   <li class="p-staff-detail__contentItem js-block02">
+                   <li id="item02" class="p-staff-detail__contentItem js-block02">
                      <h2 class="p-staff-detail__contentTitle">学生時代に力を入れたことは？</h2>
                      <p class="p-staff-detail__text">学生時代に力を入れたことは、ロボットプログラミングサークルでの活動です。<br>
                        私は、東京大学工学部在学中に、ロボットプログラミングサークルに所属していました。サークルでは、二足歩行ロボットや自律走行ロボットなどの製作に取り組み、全国大会にも出場しました。<br>
@@ -237,25 +237,25 @@
                        この経験は、現在の仕事、つまり、クライアントの課題を解決するために、必要な知識を積極的に学び、チームメンバーと協力して課題を解決する、ここに活かされています。
                      </p>
                    </li>
-                   <li class="p-staff-detail__contentItem js-block03">
+                   <li id="item03" class="p-staff-detail__contentItem js-block03">
                      <h2 class="p-staff-detail__contentTitle">TETOTEを志望した理由は？</h2>
                      <p class="p-staff-detail__text">IT戦略策定からシステム導入まで一貫して支援できる点です。<br>
                        前職でシステムエンジニアとして5年間、システム開発に携わった中で、単なる技術課題解決ではなく、クライアントの経営課題解決に貢献したいと考えるようになりました。<br>
                        TETOTEは、IT戦略策定から導入まで一貫して支援できる数少ないコンサルティング会社です。自分の技術力と経営視点を活かし、課題解決に貢献したいという想いを叶えられる環境だと確信しました。</p>
                    </li>
-                   <li class="p-staff-detail__contentItem js-block04">
+                   <li id="item04" class="p-staff-detail__contentItem js-block04">
                      <h2 class="p-staff-detail__contentTitle">やりがいを感じる瞬間は？</h2>
                      <p class="p-staff-detail__text">特に印象深いのは、大手製造業のA社でのプロジェクトです。A社は、生産管理システムの老朽化により、作業効率の低下とコスト増加に悩んでいました。<br>
                        私は、A社の経営層や現場担当者と綿密なヒアリングを行い、課題を分析しました。そして、最新のクラウド技術を活用した新しい生産管理システムを提案しました。<br>
                        導入後は、作業効率が大幅に向上し、コストも削減できました。さらに、システムの使いやすさが好評で、現場担当者からも感謝の言葉を頂きました。<br>
                        この経験を通して、ITの力でクライアントの課題解決に貢献できる仕事の価値を実感しました。</p>
                    </li>
-                   <li class="p-staff-detail__contentItem js-block05">
+                   <li id="item05" class="p-staff-detail__contentItem js-block05">
                      <h2 class="p-staff-detail__contentTitle">どんな人と一緒に働きたい？</h2>
                      <p class="p-staff-detail__text">自分の考えを相手に分かりやすく伝え、相手の意見を尊重できる人です。<br>
                        このような人々と共に働くことで、互いに刺激を与え合い、より高いレベルを目指していけると考えています。</p>
                    </li>
-                   <li class="p-staff-detail__contentItem js-block06">
+                   <li id="item06" class="p-staff-detail__contentItem js-block06">
                      <h2 class="p-staff-detail__contentTitle">応募者へのメッセージ</h2>
                      <p class="p-staff-detail__text">TETOTEは、「ITの力で社会課題を解決する」というビジョンを掲げ、日々成長している会社です。<br>
                        高い志を持ち、自ら考え行動できる人と一緒に働きたいです。<br>
@@ -383,8 +383,6 @@
      <!-- /footer -->
      <!-- common.bundle.js -->
      <script src="../../assets/js/common.bundle.js"></script>
-     <!-- ScrollTrigger.min.js -->
-     <script src="../../assets/js/ScrollTrigger.min.js"></script>
      <!-- IE object-fit -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.js"></script>
      <script>
@@ -392,7 +390,14 @@
      </script>
      <!-- polyfill(picture IE) -->
      <script src="https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement"></script>
-     <!-- works.bundle.js -->
+     <!-- gsap.min.js -->
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+     <!-- ScrollTrigger.min.js -->
+     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+     gsap.registerPlugin(ScrollTrigger);
+     <!-- jquery -->
+     <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+     <!-- sttaffdetail.bundle.js -->
      <script src="../../assets/js/staffdetail.bundle.js"></script>
    </div>
  </body>
