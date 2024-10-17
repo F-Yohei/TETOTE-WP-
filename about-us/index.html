@@ -21,6 +21,9 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
    <!-- Remove "outline" when in focus(other than keyboard operation) -->
    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js" integrity="sha384-xRa5B8rCDfdg0npZcxAh+RXswrbFk3g6dlHVeABeluN8EIwdyljz/LqJgc2R3KNA" crossorigin="anonymous" defer></script>
  </head>
@@ -229,24 +232,26 @@
          <section class="p-about-message">
            <div class="l-container">
              <h2 class="l-section__subTitle">代表メッセージ</h2>
-             <div class="p-messsge__box--left">
-               <figure class="p-media__img">
-                 <img src="/images/" alt="" width="" height="" loading="lazy">
-               </figure>
-               <p class="p-about-message__heading">あなたがやりたいこと<br>
-                 それを全力でサポートできる、<br>
-                 それがTETOTEの強みです。</p>
-             </div>
-             <div class="p-about-message__box--right">
-               <p class="p-about-message__text ">TETOTEは、ITコンサルティングとコンサル導入企業への営業を専門とする会社です。設立以来、私たちは「お客様の課題解決に真摯に取り組み、共に成長する」という理念を掲げ、お客様とパートナーと共に歩んできました。</p>
-               <p class="p-about-message__text">お客様のニーズを深く理解し、最適なソリューションを提供することで、数多くの課題解決を支援してきました。その結果、お客様との深い信頼関係を築き、共に成長することができています。</p>
-               <p class="p-about-message__text">TETOTEは、個々の能力や個性を尊重し、多様な人材が活躍できる環境づくりに力を入れています。年齢、性別、国籍、経験などに関係なく、意欲と向上心のある人材を歓迎します。</p>
-               <p class="p-about-message__text">私たちと共に、未来を創造していきましょう。</p>
-               <figure>
-                 <picture>
-                   <img src="../assets/images/about-us/ceo-name.svg" alt="代表者の名前" />
-                 </picture>
-               </figure>
+             <div class="p-about-message__wrapper">
+               <div class="p-about-message__box--left">
+                 <figure class="p-about-message__img u-pc">
+                   <img src="../assets/images/about-us/ceo.jpg" alt="" width="" height="" loading="lazy">
+                 </figure>
+                 <p class="p-about-message__heading">あなたがやりたいこと<br>
+                   それを全力でサポートできる、<br>
+                   それがTETOTEの強みです。</p>
+               </div>
+               <div class="p-about-message__box--right">
+                 <p class="p-about-message__text ">TETOTEは、ITコンサルティングとコンサル導入企業への営業を専門とする会社です。設立以来、私たちは「お客様の課題解決に真摯に取り組み、共に成長する」という理念を掲げ、お客様とパートナーと共に歩んできました。</p>
+                 <p class="p-about-message__text">お客様のニーズを深く理解し、最適なソリューションを提供することで、数多くの課題解決を支援してきました。その結果、お客様との深い信頼関係を築き、共に成長することができています。</p>
+                 <p class="p-about-message__text">TETOTEは、個々の能力や個性を尊重し、多様な人材が活躍できる環境づくりに力を入れています。年齢、性別、国籍、経験などに関係なく、意欲と向上心のある人材を歓迎します。</p>
+                 <p class="p-about-message__text">私たちと共に、未来を創造していきましょう。</p>
+                 <figure>
+                   <picture>
+                     <img src="../assets/images/about-us/ceo-name.svg" alt="代表者の名前" />
+                   </picture>
+                 </figure>
+               </div>
              </div>
            </div>
          </section>
@@ -254,89 +259,88 @@
          <section class="p-about-business">
            <div class=" l-container">
              <h2 class="l-section__subTitle -business">事業紹介</h2>
-             <p class="l-intro">TETOTEの主力事業である「コンサルティング」以外に、新規に取り組んでいる事業をいくつか
-               紹介させていただきます。</p>
-             <div class="p-about-business__content">
-               <div class="p-about-business__body">
-                 <p class="p-about-business__head">コンサルティング事業</p>
-                 <p class="p-about-business__intro">お客様と伴走し、売上に直接貢献できる</p>
-                 <p class="p-about-business__txt">営業との連携で、人と組織の成長・変革に向けた計画立案・サービス実施、さらにフォローまで。コンサルタントとして一気通貫で携わります。</p>
+             <p class="l-intro">TETOTEの主力事業である「コンサルティング」以外に、新規に取り組んでいる事業をいくつか<br class="u-pc">紹介させていただきます。</p>
+             <div class="p-about-business__contentWrapper">
+               <div class="p-about-business__content">
+                 <div class="p-about-business__body">
+                   <p class="p-about-business__head">コンサルティング事業</p>
+                   <p class="p-about-business__intro">お客様と伴走し、売上に直接貢献できる</p>
+                   <p class="p-about-business__txt">営業との連携で、人と組織の成長・変革に向けた計画立案・サービス実施、さらにフォローまで。コンサルタントとして一気通貫で携わります。</p>
+                 </div>
+                 <figure class="p-about-business__img">
+                   <picture>
+                     <img src="../assets/images/about-us/consulting.jpg" alt="コンサルティング" loading="lazy">
+                   </picture>
+                 </figure>
                </div>
-               <figure class="p-about-business__img">
-                 <picture>
-                   <img src="../assets/images/about-us/consulting.jpg" alt="コンサルティング" loading="lazy">
-                 </picture>
-               </figure>
-             </div>
-             <div class="p-about-business__content">
-               <div class="p-about-business__body">
-                 <p class="p-about-business__head">ソリューション営業事業</p>
-                 <p class="p-about-business__intro">お客様の課題を見つけ出し、必要な施策を提案する</p>
-                 <p class="p-about-business__txt">お客様が抱える課題へ、ヒアリングベースで提案型営業を行い、コンサルタントとの連携で課題解決を目指します。</p>
+               <div class="p-about-business__content">
+                 <div class="p-about-business__body">
+                   <p class="p-about-business__head">ソリューション営業事業</p>
+                   <p class="p-about-business__intro">お客様の課題を見つけ出し、必要な施策を提案する</p>
+                   <p class="p-about-business__txt">お客様が抱える課題へ、ヒアリングベースで提案型営業を行い、コンサルタントとの連携で課題解決を目指します。</p>
+                 </div>
+                 <figure class="p-about-business__img">
+                   <picture>
+                     <img src="../assets/images/about-us/solution-sales.jpg" alt="ソリューション" width="" height="" loading="lazy">
+                   </picture>
+                 </figure>
                </div>
-               <figure class="p-about-business__img">
-                 <picture>
-                   <img src="../assets/images/about-us/solution-sales.jpg" alt="ソリューション" width="" height="" loading="lazy">
-                 </picture>
-               </figure>
-             </div>
-             <div class="p-about-business__content">
-               <div class="p-about-business__body">
-                 <p class="p-about-business__head">業務系システム開発事業</p>
-                 <p class="p-about-business__intro">お客様の課題解決を強力にサポートする
-                   システムを設計する</p>
-                 <p class="p-about-business__txt">基本設計書に従って開発とテストを実施し、本番稼働をサポート。企画から運用までの全工程を通じて包括的なアプローチで、安定した運用と迅速な対応を保証します。</p>
+               <div class="p-about-business__content">
+                 <div class="p-about-business__body">
+                   <p class="p-about-business__head">業務系システム開発事業</p>
+                   <p class="p-about-business__intro">お客様の課題解決を強力にサポートする
+                     システムを設計する</p>
+                   <p class="p-about-business__txt">基本設計書に従って開発とテストを実施し、本番稼働をサポート。企画から運用までの全工程を通じて包括的なアプローチで、安定した運用と迅速な対応を保証します。</p>
+                 </div>
+                 <figure class="p-about-business__img">
+                   <picture>
+                     <img src="../assets/images/about-us/desiner.jpg" alt="デザイナー" width="" height="" loading="lazy">
+                   </picture>
+                 </figure>
                </div>
-               <figure class="p-about-business__img">
-                 <picture>
-                   <img src="../assets/images/about-us/desiner.jpg" alt="デザイナー" width="" height="" loading="lazy">
-                 </picture>
-               </figure>
              </div>
            </div>
          </section>
          <!-- sec-company-info -->
-         <section class="p-company-info">
+         <section class="p-about-companyInfo">
            <div class="l-container">
-             <div class="p-company-info__inner">
-               <h2 class="l-section__subTitle">会社概要</h2>
-               <dl class="l-section-list">
-                 <div class="l-section-list__row">
-                   <dt class="l-section-list__item">会社名</dt>
-                   <dd class="l-section-list__desc">TETOTE株式会社</dd>
-                 </div>
-                 <div class="l-section-list__row">
-                   <dt class="l-section-list__item">所在地</dt>
-                   <dd class="l-section-list__desc">〒100-0001 東京都千代田区千代田 1-1-1</dd>
-                 </div>
-                 <div class="l-section-list__row">
-                   <dt class="l-section-list__item">代表者名</dt>
-                   <dd class="l-section-list__desc">田中 浩二郎 (代表取締役)</dd>
-                 </div>
-                 <div class="l-section-list__row">
-                   <dt class="l-section-list__item">事業内容</dt>
-                   <dd class="l-section-list__desc">・ITコンサルティング</dd>
-                   <dd class="l-section-list__desc">・コンサル導入企業への営業</dd>
-                 </div>
-                 <div class="l-section-list__row">
-                   <dt class="l-section-list__item">電話番号</dt>
-                   <dd class="l-section-list__desc">03-1234-5678</dd>
-                 </div>
-                 <div class="l-section-list__row">
-                   <dt class="l-section-list__item">ウェブサイトURL</dt>
-                   <dd class="l-section-list__desc">https://tetote.co.jp</dd>
-                 </div>
-                 <div class="l-section-list__row">
-                   <dt class="l-section-list__item">メールアドレス</dt>
-                   <dd class="l-section-list__desc">tetote@tetote.co.jp</dd>
-                 </div>
-                 <div class="l-section-list__row">
-                   <dt class="l-section-list__item">設立年月</dt>
-                   <dd class="l-section-list__desc">1923年4月1日</dd>
-                 </div>
-               </dl>
+             <div class="p-about-companyInfo__inner">
+               <h2 class="l-section__subTitle -company">会社概要</h2>
+               <table class="c-table">
+                 <tr class="c-table__row">
+                   <th class="c-table__head">会社名</th>
+                   <td class="c-table__data">TETOTE株式会社</td>
+                 </tr>
+                 <tr class="c-table__row">
+                   <th class="c-table__head">所在地</th>
+                   <td class="c-table__data">〒100-0001 東京都千代田区千代田 1-1-1</td>
+                 </tr>
+                 <tr class="c-table__row">
+                   <th class="c-table__head">代表者名</th>
+                   <td class="c-table__data">田中 浩二郎 (代表取締役)</td>
+                 </tr>
+                 <tr class="c-table__row">
+                   <th class="c-table__head">事業内容</th>
+                   <td class="c-table__data -lh25">・ITコンサルティング<br>・コンサル導入企業への営業</td>
+                 </tr>
+                 <tr class="c-table__row">
+                   <th class="c-table__head">電話番号</th>
+                   <td class="c-table__data">03-1234-5678</td>
+                 </tr>
+                 <tr class="c-table__row">
+                   <th class="c-table__head">ウェブサイトURL</th>
+                   <td class="c-table__data">https://tetote.co.jp</td>
+                 </tr>
+                 <tr class="c-table__row">
+                   <th class="c-table__head">メールアドレス</th>
+                   <td class="c-table__data">tetote@tetote.co.jp</td>
+                 </tr>
+                 <tr class="c-table__row">
+                   <th class="c-table__head">設立年月</th>
+                   <td class="c-table__data">1923年4月1日</td>
+                 </tr>
+               </table>
              </div>
-           </div>
          </section>
          <!-- /sec-company-info -->
          <!-- /section-about -->
@@ -420,7 +424,7 @@
              </ul>
            </div>
            <div class="l-footer__logo">
-             <a href="../" class="l-header__logoLink">
+             <a href="../" class="l-footer__logoLink">
                <img src="../assets/images/common/footer_logo.svg" alt="TETOTE株式会社" />
              </a>
              <div class="l-footer__policy">
@@ -433,6 +437,8 @@
      <!-- /footer -->
      <!-- common.bundle.js -->
      <script src="../assets/js/common.bundle.js"></script>
+     <!-- ScrollTrigger.min.js -->
+     <script src="../assets/js/ScrollTrigger.min.js"></script>
      <!-- IE object-fit -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.4/ofi.js"></script>
      <script>
