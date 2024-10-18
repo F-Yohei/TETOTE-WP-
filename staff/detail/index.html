@@ -24,6 +24,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
    <!-- Remove "outline" when in focus(other than keyboard operation) -->
    <script src="https://cdn.jsdelivr.net/npm/focus-visible@5.2.0/dist/focus-visible.min.js" integrity="sha384-xRa5B8rCDfdg0npZcxAh+RXswrbFk3g6dlHVeABeluN8EIwdyljz/LqJgc2R3KNA" crossorigin="anonymous" defer></script>
  </head>
@@ -163,7 +164,7 @@
              <div class="p-staff-detail__img">
                <figure class="p-staff-detail__fig">
                  <picture>
-                   <img src="../../assets/images/details/syain01.jpg" loading="lazy" alt="" width="286px" height="368px" />
+                   <img src="../../assets/images/staff/details/syain01.jpg" loading="lazy" alt="" width="286px" height="368px" />
                  </picture>
                </figure>
                <div class="p-staff-detail__textBox">
@@ -197,7 +198,7 @@
            </div>
          </nav>
          <!-- /breadcrumbs -->
-         <!-- p-staff -->
+         <!-- p-staff-detail -->
          <section class="p-staff-detail">
            <div class=" l-container">
              <div class="p-staff-detail__contentInner">
@@ -289,7 +290,82 @@
              </div>
            </div>
          </section>
-         <!-- p-staff -->
+         <!-- /p-staff-detail -->
+         <!-- /p-staff-member -->
+         <section class="p-staff-member u-pc">
+           <div class="l-container">
+             <h2 class="l-section__subTitle">その他のメンバー</h2>
+             <ul class="p-staff-member__list">
+               <li class="p-staff-member__item">
+                 <div class="p-staff-member__img">
+                   <figure>
+                     <picture>
+                       <img src="../../assets/images/staff/details/syain04.jpg" loading="lazy" alt="" width="300px" height="379px" />
+                     </picture>
+                   </figure>
+                   <div class="p-staff-member__textBox">
+                     <div class="p-staff-member__comment">
+                       <p>ビジネスの課題を</p>
+                       <p>データで解決する醍醐味</p>
+                     </div>
+                     <div class="p-staff-member__content">
+                       <p class="p-staff-member__title">
+                         <span>データサイエンティスト</span>
+                         <span>2002年入社</span>
+                       </p>
+                       <h3 class="p-staff-member__name">高橋 智</h3>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+               <li class="p-staff-member__item">
+                 <div class="p-staff-member__img">
+                   <figure>
+                     <picture>
+                       <img src="../../assets/images/staff/details/syain05.jpg" loading="lazy" alt="" width="300px" height="379px" />
+                     </picture>
+                   </figure>
+                   <div class="p-staff-member__textBox">
+                     <div class="p-staff-member__comment">
+                       <p>どんな難解な案件も</p>
+                       <p>チームで突破できる強い連携</p>
+                     </div>
+                     <div class="p-staff-member__content">
+                       <p class="p-staff-member__title">
+                         <span>コンサルタント</span>
+                         <span>2006年入社</span>
+                       </p>
+                       <h3 class="p-staff-member__name">高田 凛</h3>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+               <li class="p-staff-member__item">
+                 <div class="p-staff-member__img">
+                   <figure>
+                     <picture>
+                       <img src="../../assets/images/staff/details/syain06.jpg" loading="lazy" alt="" width="300px" height="379px" />
+                     </picture>
+                   </figure>
+                   <div class="p-staff-member__textBox">
+                     <div class="p-staff-member__comment">
+                       <p>お客様と一緒に開発</p>
+                       <p>豊富なプライム案件が魅力です</p>
+                     </div>
+                     <div class="p-staff-member__content">
+                       <p class="p-staff-member__title">
+                         <span>システム事業部課長</span>
+                         <span>2007年入社</span>
+                       </p>
+                       <h3 class="p-staff-member__name">橘 光</h3>
+                     </div>
+                   </div>
+                 </div>
+               </li>
+             </ul>
+           </div>
+         </section>
+         <!-- /p-staff-member -->
        </article>
      </main>
      <!-- /main -->
@@ -394,7 +470,9 @@
      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
      <!-- ScrollTrigger.min.js -->
      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-     gsap.registerPlugin(ScrollTrigger);
+     <script>
+       gsap.registerPlugin(ScrollTrigger);
+     </script>
      <!-- jquery -->
      <script src="../../assets/js/jquery-3.6.0.min.js"></script>
      <!-- sttaffdetail.bundle.js -->
