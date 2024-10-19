@@ -606,6 +606,14 @@ p-benefits
   padding-bottom: 4rem;
 }
 
+/*==============================================================
+p-career
+==============================================================*/
+.p-career .l-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 /* footer
 ----------------------------------------- */
 .l-footer__navItem {
@@ -1169,6 +1177,7 @@ body.subpage .l-main .l-section__subTitle.-voice {
   text-align: left;
 }
 body.subpage .l-main .l-section__subTitle.-career {
+  font-size: 1.9rem;
   text-align: left;
 }
 body.subpage .l-main .l-intro {
@@ -2759,6 +2768,52 @@ body.blog-detail .c-breadcrumbs {
 }
 .p-benefits-userVoice__text {
   margin-top: 0.7rem;
+  color: #222222;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6666666667;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+}
+
+/* p-career
+----------------------------------------- */
+/*==============================================================
+.p-career
+==============================================================*/
+.p-career__top {
+  margin-top: 2rem;
+}
+.p-career__text {
+  color: #222222;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+}
+.p-career__img {
+  margin: 2.4rem 0 1.7rem 0;
+}
+.p-career__list {
+  margin-top: 4rem;
+}
+.p-career__item:not(:first-child) {
+  margin-top: 2rem;
+}
+.p-career__head {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  background: #afa86f;
+  color: #222222;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+}
+.p-career__txt {
+  margin-top: 2rem;
   color: #222222;
   font-weight: 400;
   font-size: 1.2rem;
@@ -4831,6 +4886,9 @@ button.swiper-pagination-bullet {
     padding-top: 13.2rem;
     padding-bottom: 13.9rem;
   }
+  .p-career .l-container {
+    padding: 14.5rem 19rem 17.6rem !important;
+  }
   .l-footer__container {
     padding: 16.8rem 0 2.4rem;
   }
@@ -4861,6 +4919,9 @@ button.swiper-pagination-bullet {
   body.subpage .l-main .l-section__subTitle {
     font-size: 3.2rem;
     line-height: 1;
+  }
+  body.subpage .l-main .l-section__subTitle.-career {
+    font-size: 3.2rem;
   }
   body.subpage .l-main .l-intro {
     margin-top: 4.4rem;
@@ -5197,6 +5258,32 @@ button.swiper-pagination-bullet {
   }
   .p-benefits-userVoice__img {
     margin-top: 3.8rem;
+  }
+  .p-career__top {
+    margin-top: 11.4rem;
+  }
+  .p-career__text {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  .p-career__img {
+    margin: 4.8rem 0 3.7rem 0;
+  }
+  .p-career__list {
+    margin-top: 8.8rem;
+  }
+  .p-career__item:not(:first-child) {
+    margin-top: 3.8rem;
+  }
+  .p-career__head {
+    padding: 1.2rem 2rem;
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+  .p-career__txt {
+    margin-top: 5rem;
+    font-size: 1.6rem;
+    line-height: 1.7875;
   }
   .p-recruit-message {
     padding: 16.5rem 0 19.2rem 0;
@@ -6128,20 +6215,10 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  body.subpage .l-hamburger__toggle {
-    top: 3.4rem;
-    right: 4.5rem;
-  }
-  body.subpage .l-header {
-    height: 11.8rem;
-  }
-  .p-hero {
-    margin-top: 11.8rem;
-  }
-}
-
 @media screen and (min-width: 576px) {
+  .p-career .l-container {
+    padding: 4rem;
+  }
   .l-inner {
     padding: 0 4.7rem;
   }
@@ -6159,6 +6236,19 @@ button.swiper-pagination-bullet {
   }
   .p-blog__media {
     margin-top: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body.subpage .l-hamburger__toggle {
+    top: 3.4rem;
+    right: 4.5rem;
+  }
+  body.subpage .l-header {
+    height: 11.8rem;
+  }
+  .p-hero {
+    margin-top: 11.8rem;
   }
 }
 
