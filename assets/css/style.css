@@ -1168,6 +1168,9 @@ body.subpage .l-main .l-section__subTitle.-company {
 body.subpage .l-main .l-section__subTitle.-voice {
   text-align: left;
 }
+body.subpage .l-main .l-section__subTitle.-career {
+  text-align: left;
+}
 body.subpage .l-main .l-intro {
   margin-top: 2rem;
   color: #222222;
