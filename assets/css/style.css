@@ -594,6 +594,18 @@ p-blog-detail
   padding-bottom: 8rem;
 }
 
+/*==============================================================
+p-benefits
+==============================================================*/
+.p-benefits-system .l-container {
+  padding-top: 4rem;
+}
+
+.p-benefits-userVoice .l-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 /* footer
 ----------------------------------------- */
 .l-footer__navItem {
@@ -1151,6 +1163,9 @@ body.subpage .l-main .l-section__subTitle.-business {
   text-align: left;
 }
 body.subpage .l-main .l-section__subTitle.-company {
+  text-align: left;
+}
+body.subpage .l-main .l-section__subTitle.-voice {
   text-align: left;
 }
 body.subpage .l-main .l-intro {
@@ -2707,6 +2722,48 @@ body.blog-detail .c-breadcrumbs {
   font-family: "Noto Sans JP";
   letter-spacing: 0em;
 }
+/* p-benefits
+----------------------------------------- */
+/*==============================================================
+.p-benefits-system
+==============================================================*/
+
+/*==============================================================
+.p-benefits-userVoice
+==============================================================*/
+.p-benefits-userVoice__wrapper {
+  padding: 2.4rem 0;
+}
+.p-benefits-userVoice__content:last-of-type {
+  margin-top: 2.6rem;
+}
+.p-benefits-userVoice__day {
+  color: #988c2c;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+}
+.p-benefits-userVoice__name {
+  margin-top: 0.4rem;
+  color: #222222;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+}
+.p-benefits-userVoice__text {
+  margin-top: 0.7rem;
+  color: #222222;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6666666667;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+}
+
 /* recruit
 ----------------------------------------- */
 .p-recruit-message {
@@ -4764,6 +4821,13 @@ button.swiper-pagination-bullet {
   .p-blog-detail .l-container {
     padding: 3.4rem 28rem 13.9rem;
   }
+  .p-benefits-system .l-container {
+    padding-top: 14.5rem;
+  }
+  .p-benefits-userVoice .l-container {
+    padding-top: 13.2rem;
+    padding-bottom: 13.9rem;
+  }
   .l-footer__container {
     padding: 16.8rem 0 2.4rem;
   }
@@ -5096,6 +5160,40 @@ button.swiper-pagination-bullet {
   .p-blog-detail__navText {
     font-size: 1.6rem;
     line-height: 1;
+  }
+  .p-benefits-system .c-table {
+    margin-top: 7.8rem;
+  }
+  .p-benefits-userVoice__wrapper {
+    -webkit-box-pack: justify;
+    display: -webkit-box;
+    display: flex;
+            justify-content: space-between;
+    margin-top: 2.3rem;
+    padding: 0;
+  }
+  .p-benefits-userVoice__content {
+    width: 48%;
+  }
+  .p-benefits-userVoice__content:last-of-type {
+    margin-top: 0;
+  }
+  .p-benefits-userVoice__day {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  .p-benefits-userVoice__name {
+    margin-top: 1.3rem;
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+  .p-benefits-userVoice__text {
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    line-height: 1.8125;
+  }
+  .p-benefits-userVoice__img {
+    margin-top: 3.8rem;
   }
   .p-recruit-message {
     padding: 16.5rem 0 19.2rem 0;
