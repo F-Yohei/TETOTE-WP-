@@ -2585,12 +2585,19 @@ body.blog-detail .c-breadcrumbs {
   letter-spacing: 0em;
 }
 .p-blog-detail__txt {
+  margin-top: 1.4rem;
   color: #222222;
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1.5;
   font-family: "Noto Sans JP";
   letter-spacing: 0em;
+}
+.p-blog-detail__intro {
+  margin-top: 2rem;
+}
+.p-blog-detail__introText {
+  margin-top: 4rem;
 }
 .p-blog-detail__img img {
   -o-object-fit: cover;
@@ -2615,6 +2622,7 @@ body.blog-detail .c-breadcrumbs {
   letter-spacing: 0em;
 }
 .p-blog-detail__contentText {
+  margin-top: 3rem;
   color: #222222;
   font-weight: 400;
   font-size: 1.4rem;
@@ -2629,25 +2637,57 @@ body.blog-detail .c-breadcrumbs {
 .p-blog-detail__nav {
   background: #f0f0f0;
 }
-.p-blog-detail__navItem {
+.p-blog-detail__navList {
   position: relative;
 }
-.p-blog-detail__navItem.-prev::before {
+.p-blog-detail__navList:before {
+  -webkit-transform: translate(-50%, -50%);
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 2.4rem;
-  height: 2.4rem;
-  background: url(../images/blog/details/arrow02-left.svg);
+  top: 50%;
+  left: 50%;
+  width: 0.1rem;
+  height: 5.6rem;
+          transform: translate(-50%, -50%);
+  background: #222222;
   content: "";
 }
-.p-blog-detail__navItem.-next::before {
+.p-blog-detail__navItem:first-child {
+  border-bottom: 1px solid #222222;
+}
+.p-blog-detail__navLink {
+  display: block;
+  position: relative;
+  padding: 1rem 1rem;
+}
+.p-blog-detail__navLink.-prev {
+  padding-left: 5rem;
+}
+.p-blog-detail__navLink.-prev::before {
+  -webkit-transform: translateY(-50%);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%;
+  left: 0.5rem;
   width: 2.4rem;
   height: 2.4rem;
+          transform: translateY(-50%);
+  background: url(../images/blog/details/arrow02-left.svg);
+  background-size: contain;
+  content: "";
+}
+.p-blog-detail__navLink.-next {
+  padding-right: 5rem;
+  text-align: right;
+}
+.p-blog-detail__navLink.-next::before {
+  -webkit-transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
+          transform: translateY(-50%);
   background: url(../images/blog/details/arrow02-right.svg);
+  background-size: contain;
   content: "";
 }
 .p-blog-detail__navText {
@@ -2667,7 +2707,6 @@ body.blog-detail .c-breadcrumbs {
   font-family: "Noto Sans JP";
   letter-spacing: 0em;
 }
-
 /* recruit
 ----------------------------------------- */
 .p-recruit-message {
@@ -4723,8 +4762,7 @@ button.swiper-pagination-bullet {
     padding-bottom: 13.9rem;
   }
   .p-blog-detail .l-container {
-    padding-top: 3.4rem;
-    padding-bottom: 13.9rem;
+    padding: 3.4rem 28rem 13.9rem;
   }
   .l-footer__container {
     padding: 16.8rem 0 2.4rem;
@@ -5006,17 +5044,35 @@ button.swiper-pagination-bullet {
     margin-top: 8rem;
   }
   .p-blog-detail__body {
-    padding: 4.1rem 4rem 2.3rem;
+    padding: 3.6rem 4rem 2.3rem;
+  }
+  .p-blog-detail__day {
+    padding-left: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+  .p-blog-detail__intro {
+    margin-top: 4.1rem;
+  }
+  .p-blog-detail__introText {
+    margin-top: 4.5rem;
   }
   .p-blog-detail__introText {
     font-size: 1.6rem;
     line-height: 1.75;
+  }
+  .p-blog-detail__contentList {
+    margin-top: 2.5rem;
+  }
+  .p-blog-detail__contentItem:not(:first-child) {
+    margin-top: 3rem;
   }
   .p-blog-detail__contentTitle {
     font-size: 2.4rem;
     line-height: 1;
   }
   .p-blog-detail__contentText {
+    margin-top: 5rem;
     font-size: 1.6rem;
     line-height: 1.75;
   }
@@ -5026,6 +5082,16 @@ button.swiper-pagination-bullet {
     display: flex;
             align-items: center;
     justify-content: space-around;
+    padding: 0 7.7rem;
+  }
+  .p-blog-detail__navItem:first-child {
+    border-bottom: none;
+  }
+  .p-blog-detail__navLink {
+    padding: 3.3rem 0;
+  }
+  .p-blog-detail__navLink.-next {
+    text-align: left;
   }
   .p-blog-detail__navText {
     font-size: 1.6rem;
@@ -5937,7 +6003,9 @@ button.swiper-pagination-bullet {
     font-size: 1.4rem;
   }
   .p-blog-detail__txt {
-    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
   }
   .u-pc {
     display: block;
