@@ -614,6 +614,14 @@ p-career
   padding-bottom: 4rem;
 }
 
+/*==============================================================
+p-details
+==============================================================*/
+.p-details .l-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 /* footer
 ----------------------------------------- */
 .l-footer__navItem {
@@ -1178,6 +1186,9 @@ body.subpage .l-main .l-section__subTitle.-voice {
 }
 body.subpage .l-main .l-section__subTitle.-career {
   font-size: 1.9rem;
+  text-align: left;
+}
+body.subpage .l-main .l-section__subTitle.-details {
   text-align: left;
 }
 body.subpage .l-main .l-intro {
@@ -2827,6 +2838,44 @@ body.blog-detail .c-breadcrumbs {
 /*==============================================================
 .p-details
 ==============================================================*/
+.p-details__text {
+  margin-top: 2rem;
+}
+.p-details__nav {
+  -webkit-box-pack: justify;
+  display: -webkit-box !important;
+  display: flex !important;
+          justify-content: space-between;
+}
+.p-details__navLink {
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: flex;
+          align-items: center;
+          justify-content: center;
+  width: 33.333%;
+  max-width: 294px;
+  padding: 0.8rem 1.4rem;
+  border: 1px solid #222222;
+  border-radius: 4rem;
+  background: #faf7f1;
+  color: #222222;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+  text-align: center;
+}
+.p-details__navLink:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.l-section__subTitle.-details:not(:first-of-type) {
+  margin-top: 5rem;
+}
+
 /* recruit
 ----------------------------------------- */
 .p-recruit-message {
@@ -4894,6 +4943,9 @@ button.swiper-pagination-bullet {
   .p-career .l-container {
     padding: 14.5rem 19rem 17.6rem !important;
   }
+  .p-details .l-container {
+    padding: 14.5rem 4rem 17.6rem !important;
+  }
   .l-footer__container {
     padding: 16.8rem 0 2.4rem;
   }
@@ -5290,6 +5342,12 @@ button.swiper-pagination-bullet {
     font-size: 1.6rem;
     line-height: 1.7875;
   }
+  .p-details__text {
+    margin-top: 11.4rem;
+  }
+  .l-section__subTitle.-details:not(:first-of-type) {
+    margin-top: 8.8rem;
+  }
   .p-recruit-message {
     padding: 16.5rem 0 19.2rem 0;
   }
@@ -5535,6 +5593,9 @@ button.swiper-pagination-bullet {
   }
   .p-blog .l-container {
     padding: 6.8rem 17.6rem 14rem;
+  }
+  .p-details .l-container {
+    padding: 14.5rem 19rem 17.6rem !important;
   }
   .l-footer {
     padding-bottom: 6.4rem;
@@ -6200,6 +6261,12 @@ button.swiper-pagination-bullet {
     font-size: 3.2rem;
     line-height: 1;
   }
+  .p-details__navLink {
+    width: 29.4rem;
+    padding: 1.8rem 0;
+    font-size: 2rem;
+    line-height: 1;
+  }
   .u-pc {
     display: block;
   }
@@ -6222,6 +6289,9 @@ button.swiper-pagination-bullet {
 
 @media screen and (min-width: 576px) {
   .p-career .l-container {
+    padding: 4rem;
+  }
+  .p-details .l-container {
     padding: 4rem;
   }
   .l-inner {
