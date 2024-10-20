@@ -1,4 +1,4 @@
-!function(){var e={864:function(){$(".p-faq__title").on("click",(function(){var e=$(this).next(".p-faq__text");$(e).stop().slideToggle(),$(this).hasClass("close")?($(this).removeClass("close"),$(this).addClass("open")):($(this).addClass("close"),$(this).removeClass("open"))}))},540:function(e,t,n){var r;function i(e){return i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},i(e)
+!function(){var e={864:function(){$(".p-faq__title").on("click",(function(){var e=$(this).next(".p-faq__text");$(e).slideToggle(),$(this).hasClass("close")?($(this).removeClass("close"),$(this).addClass("open")):($(this).addClass("close"),$(this).removeClass("open"))}))},540:function(e,t,n){var r;function i(e){return i="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},i(e)
 /*!
  * jQuery JavaScript Library v3.7.1
  * https://jquery.com/

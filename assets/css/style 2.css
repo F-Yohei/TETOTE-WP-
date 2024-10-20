@@ -2922,9 +2922,6 @@ body.blog-detail .c-breadcrumbs {
 .p-faq__item:first-child {
   border-top: 1px solid #988c2c;
 }
-.p-faq__item:first-child .p-faq__text {
-  display: block;
-}
 .p-faq__title {
   position: relative;
   padding: 0 5.2rem 0 3.5rem;
@@ -2993,7 +2990,7 @@ body.blog-detail .c-breadcrumbs {
   font-size: 1.4rem;
   line-height: 2.2857142857;
   font-family: "Noto Sans JP";
-  letter-spacing: 0em;
+  letter-spacing: 0.15em;
 }
 
 .l-section__subTitle.-faq:not(:first-of-type) {
@@ -5159,8 +5156,10 @@ button.swiper-pagination-bullet {
   .p-faq__text {
     margin-top: 3.5rem;
     padding: 0 5.2rem 0 6.5rem;
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 2;
+    letter-spacing: 0.15em;
   }
   .l-section__subTitle.-faq:not(:first-of-type) {
     margin-top: 8.8rem;
