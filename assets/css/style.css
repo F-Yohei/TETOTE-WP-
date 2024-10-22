@@ -558,10 +558,6 @@ body {
   counter-reset: number 0;
 }
 
-.wrap {
-  overflow-x: hidden;
-}
-
 a {
   color: inherit;
 }
@@ -991,8 +987,6 @@ body.is-active {
   position: relative;
   width: 15.1rem;
   max-width: 251px;
-  /*　上に上がる動き　*/
-  /*　下に下がる動き　*/
 }
 .l-header__logo.-sub {
   display: none;
@@ -1665,12 +1659,17 @@ Splide
 ==============================================================*/
 .p-home-mv .splide {
   position: relative;
+  width: 100%;
+  height: auto;
 }
 .p-home-mv .splide .splide__track {
   height: 100%;
 }
 .p-home-mv .splide .splide__track .splide__list .splide__slide {
+  -webkit-transform: translateX(0) !important;
+  visibility: visible !important;
   height: 100%;
+          transform: translateX(0) !important;
 }
 .p-home-mv .splide .splide__track .splide__list .splide__slide figure {
   height: 100%;
