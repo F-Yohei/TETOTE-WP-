@@ -601,6 +601,14 @@ p-about
 }
 
 /*==============================================================
+p-staff
+==============================================================*/
+.p-staff .l-container {
+  padding-top: 8rem;
+  padding-bottom: 12rem;
+}
+
+/*==============================================================
 p-staff-detail
 ==============================================================*/
 .p-staff-detail .l-container {
@@ -1764,6 +1772,10 @@ Splide
 /*==============================================================
 Splide
 ==============================================================*/
+.p-home-staff .splide {
+  visibility: visible;
+}
+
 .splide__track {
   overflow: visible !important;
 }
@@ -1940,6 +1952,9 @@ Splide
   padding-left: 14% !important;
 }
 
+.p-home-introduction__inner .splide {
+  visibility: visible;
+}
 .p-home-introduction__inner .splide .splide__track .splide__list .splide__slide {
   width: 27.1rem !important;
   height: 21rem !important;
@@ -2342,24 +2357,25 @@ p-about-business
 /*==============================================================
 p-staff
 ==============================================================*/
-.p-staff__slider {
-  -webkit-transform: translateX(-60px);
-  margin-top: 5rem;
-  padding-bottom: 12.8rem;
-          transform: translateX(-60px);
+.p-staff__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: flex;
+          flex-direction: column;
+          align-items: center;
 }
 .p-staff__item {
   position: relative;
-  width: 24.6rem !important;
-  height: 31.1rem !important;
+  max-width: 300px;
 }
-.p-staff__item:nth-child(odd) {
-  -webkit-transform: translateY(25px);
-          transform: translateY(25px);
+.p-staff__item:not(:first-of-type) {
+  margin-top: 11rem;
 }
 .p-staff__textBox {
   position: absolute;
-  top: 26.3rem;
+  bottom: -7rem;
   left: 0;
 }
 .p-staff__comment {
@@ -2372,11 +2388,11 @@ p-staff
 }
 .p-staff__comment p {
   display: inline-block;
-  padding: 0.7rem;
+  padding: 0.5rem 0.7rem;
   background: #afa86f;
 }
 .p-staff__comment p:nth-child(2) {
-  margin-top: 0.8rem;
+  margin-top: 0.5rem;
 }
 .p-staff__title {
   margin-top: 1rem;
@@ -2386,6 +2402,9 @@ p-staff
   line-height: 1;
   font-family: "Noto Sans JP";
   letter-spacing: 0em;
+}
+.p-staff__title--pl {
+  padding-left: 0.5rem;
 }
 .p-staff__name {
   margin-top: 1.4rem;
@@ -5116,6 +5135,15 @@ button.swiper-pagination-bullet {
     margin-top: initial;
     margin-right: 4.8rem;
   }
+  .p-staff__item {
+    width: 30% !important;
+  }
+  .p-staff__item:nth-of-type(n + 3) {
+    margin-top: 0 !important;
+  }
+  .p-staff__item:nth-of-type(n + 4) {
+    margin-top: 13.9rem !important;
+  }
   .p-staff-detail__item {
     padding: 4.2rem 0;
   }
@@ -5412,6 +5440,9 @@ button.swiper-pagination-bullet {
   }
   .l-container {
     padding: 0 19rem;
+  }
+  .p-staff .l-container {
+    padding: 12.9rem 16.5rem 14rem;
   }
   .p-staff-detail .l-container {
     padding-top: 8rem;
@@ -5955,24 +5986,14 @@ button.swiper-pagination-bullet {
     width: 50%;
     padding-top: 17.6rem;
   }
-  .p-staff__slider {
-    margin-top: 5.2rem;
-    padding-bottom: 15rem;
-  }
-  .p-staff__item {
-    width: 30rem !important;
-    height: 37.9rem !important;
-  }
   .p-staff__textBox {
-    top: 33.6rem;
+    top: 33.2rem !important;
   }
   .p-staff__comment {
     font-size: 2rem;
   }
-  .p-staff__comment p:nth-child(2) {
-    margin-top: 1rem;
-  }
   .p-staff__title {
+    margin-top: 1.6rem;
     font-size: 1.6rem;
   }
   .p-staff__name {
@@ -6163,6 +6184,25 @@ button.swiper-pagination-bullet {
   }
   .p-media {
     margin-top: 1.8rem;
+  }
+  .p-staff__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .p-staff__item {
+    width: 45%;
+  }
+  .p-staff__item:not(:first-of-type) {
+    margin-top: 0;
+  }
+  .p-staff__item:nth-of-type(n + 3) {
+    margin-top: 10rem;
+  }
+  .p-staff__textBox {
+    bottom: -7rem;
   }
   .p-staff-detail__comment {
     width: 74%;

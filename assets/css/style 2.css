@@ -660,6 +660,22 @@ p-faq
   padding-bottom: 4rem;
 }
 
+/*==============================================================
+p-entry
+==============================================================*/
+.p-entry .l-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/*==============================================================
+p-entry-thanks
+==============================================================*/
+.p-entry-thanks .l-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 /* footer
 ----------------------------------------- */
 .l-footer__navItem {
@@ -1233,6 +1249,9 @@ body.subpage .l-main .l-section__subTitle.-details {
 body.subpage .l-main .l-section__subTitle.-faq {
   text-align: left;
 }
+body.subpage .l-main .l-section__subTitle.-entry {
+  font-size: 1.6rem;
+}
 body.subpage .l-main .l-intro {
   margin-top: 2rem;
   color: #222222;
@@ -1300,51 +1319,118 @@ body.subpage .l-main .l-intro {
 ----------------------------------------- */
 .l-form {
   margin-top: 6.8rem;
+  border-top: 1px dashed #988c2c;
+}
+.l-form__list {
+  padding-top: 5rem;
 }
 .l-form__item:not(:first-child) {
-  margin-top: 5.2rem;
+  margin-top: 2rem;
 }
-.l-form__dt {
-  color: #222222;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.8666666667;
-  font-family: "Noto Sans JP";
-  letter-spacing: 0.15em;
-}
-.l-form__dd {
-  margin-top: 1.9rem;
-  /* 内側のマル */
-  /* 選択された時の内側のマルの色 */
-}
-.l-form__dd span input {
-  width: 100%;
-  height: 6.4rem;
-  padding: 2.1rem 2.4rem;
-  border: 1px solid #b4b4b4;
-  background: #f0f0f0;
-}
-.l-form__dd.-zip span input {
-  width: 60.2739%;
-}
-.l-form__dd.-file span input {
-  padding: 1.7rem 2.4rem;
-}
-.l-form__dd.-radio {
+.l-form__inputWrapper {
   -webkit-box-align: center;
   display: -webkit-box;
   display: flex;
           align-items: center;
+  margin-top: 2rem;
 }
-.l-form__dd.-radio .-flex:not(:last-child) {
-  margin-right: 3.1rem;
+.l-form__inputWrapper.-year span {
+  padding-left: 0.5rem;
+}
+.l-form__inputWrapper.-select {
+  position: relative;
+}
+.l-form__inputWrapper.-select::before {
+  -webkit-transform: translateY(-47%) rotate(135deg);
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  top: 47%;
+  top: 47%;
+  right: 4.3rem;
+  width: 9px;
+  height: 9px;
+          transform: translateY(-47%) rotate(135deg);
+  border: 2px solid currentColor;
+  border-bottom: 0;
+  border-left: 0;
+  content: "";
+  color: #333;
+  line-height: 1;
+  vertical-align: middle;
+}
+.l-form__dt {
+  color: #222222;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.448125;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+}
+.l-form__dt--accent {
+  color: #988c2c;
+}
+.l-form__dd {
+  max-width: 575px;
+  margin-top: 1.9rem;
+  /* 内側のマル */
+  /* 選択された時の内側のマルの色 */
+}
+.l-form__dd div input {
+  width: 100%;
+  height: 5.6rem;
+  padding: 0 2rem;
+  border: 1px solid #988c2c;
+  border-radius: 10px;
+  background: #faf7f1;
+}
+.l-form__dd span input {
+  width: 100%;
+  height: 5.6rem;
+  padding: 0 2rem;
+  border: 1px solid #988c2c;
+  border-radius: 10px;
+  background: #faf7f1;
+}
+.l-form__dd select {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5.6rem;
+  margin-right: 0.5rem;
+  padding: 0 2rem;
+  border: 1px solid #988c2c;
+  border-radius: 10px;
+  background: #faf7f1;
+  font-size: 1.2rem;
+}
+.l-form__dd.-radio {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: -webkit-box;
+  display: flex;
+          flex-direction: column;
+}
+.l-form__dd.-radio span:not(:first-of-type) {
+  margin-top: 1.6rem;
+}
+.l-form__dd.-radio-sec {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  display: -webkit-box;
+  display: flex;
+          flex-direction: column;
+}
+.l-form__dd.-radio-sec span:not(:first-of-type) {
+  margin-top: 2.1rem;
 }
 .l-form__dd textarea {
   width: 100%;
-  height: 26rem;
-  padding: 2.1rem 2.4rem;
-  border: 1px solid #b4b4b4;
-  background: #f0f0f0;
+  height: 24rem;
+  padding: 1.8rem 1.9rem;
+  border: 1px solid #988c2c;
+  border-radius: 10px;
+  background: #faf7f1;
 }
 .l-form__dd input[type=radio] {
   -webkit-appearance: none; /* フォーム要素のスタイルを初期化 */
@@ -1352,7 +1438,7 @@ body.subpage .l-main .l-intro {
   width: 2.4rem;
   height: 2.4rem;
   padding: 0;
-  border: 2px solid #b4b4b4;
+  border: 1px solid #988c2c;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1362,51 +1448,29 @@ body.subpage .l-main .l-intro {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%;
-  height: 80%;
+  width: 1rem;
+  height: 1rem;
           transform: translate(-50%, -50%);
   border-radius: 50%;
   content: "";
 }
 .l-form__dd input[type=radio]:checked:before {
-  border: 2px solid #988c2c;
-  background: #988c2c;
+  border: 1px solid #222222;
+  background: #222222;
 }
-.l-form__select {
-  position: relative;
+.l-form__input--square input[type=radio] {
+  border-radius: 0%;
 }
-.l-form__select::before {
-  -webkit-transform: translate(0%, -50%);
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 2.4rem;
-  width: 1.1rem;
-  height: 0.7rem;
-          transform: translate(0%, -50%);
-  background-image: url(../images/common/select_arrow_up.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  content: "";
-}
-.l-form .select {
-  -webkit-appearance: none;
-          appearance: none;
-  width: 100%;
-  height: 6.4rem;
-  padding: 0 0 0 2.4rem;
-  border: 1px solid #b4b4b4;
-  background: #f0f0f0;
-  cursor: pointer;
+.l-form__input--square input[type=radio]:before {
+  border-radius: 0%;
 }
 .l-form__label {
   color: #222222;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.6rem;
+  line-height: 1.448125;
   font-family: "Noto Sans JP";
-  letter-spacing: 0.15em;
+  letter-spacing: 0em;
 }
 .l-form__privacy {
   display: block;
@@ -1420,20 +1484,38 @@ body.subpage .l-main .l-intro {
           align-items: center;
           justify-content: center;
 }
-.l-form__privacy input {
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 1px solid #b4b4b4;
+.l-form__privacy input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1px solid #988c2c;
+  border-radius: 0%;
+  background: #faf7f1;
   cursor: pointer;
 }
+.l-form__privacy input[type=checkbox]:checked:before {
+  -webkit-transform: rotate(50deg);
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  width: 4px;
+  height: 11px;
+          transform: rotate(50deg);
+  border-right: 2px solid #988c2c;
+  border-bottom: 2px solid #988c2c;
+  content: "";
+}
 .l-form__privacyText {
-  margin: 0 0 0 1.6rem;
+  display: inline-block;
+  padding-left: 0.6rem;
   color: #222222;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.6;
+  font-size: 1.4rem;
+  line-height: 1;
   font-family: "Noto Sans JP";
-  letter-spacing: 0.15em;
+  letter-spacing: 0em;
 }
 .l-form__privacyText a {
   border-bottom: 2px solid #222222;
@@ -1446,18 +1528,19 @@ body.subpage .l-main .l-intro {
   -webkit-transition: all 0.5s ease;
   display: block;
   width: 100%;
-  padding: 2.4rem 0;
+  padding: 1.9rem 0;
   border: 1px solid #222222;
-  background: #222222;
-  color: #fff;
-  font-weight: 600;
+  background: #fff;
+  color: #222222;
+  font-weight: 400;
   font-size: 1.6rem;
-  line-height: 1.25;
-  letter-spacing: 0.15em;
+  line-height: 1;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.l-form__submit:hover input {
+.l-form__submit input__submit:hover input {
   background: #fff;
   color: #222222;
 }
@@ -1681,6 +1764,10 @@ Splide
 /*==============================================================
 Splide
 ==============================================================*/
+.p-home-staff .splide {
+  visibility: visible;
+}
+
 .splide__track {
   overflow: visible !important;
 }
@@ -1857,6 +1944,9 @@ Splide
   padding-left: 14% !important;
 }
 
+.p-home-introduction__inner .splide {
+  visibility: visible;
+}
 .p-home-introduction__inner .splide .splide__track .splide__list .splide__slide {
   width: 27.1rem !important;
   height: 21rem !important;
@@ -2259,16 +2349,10 @@ p-about-business
 /*==============================================================
 p-staff
 ==============================================================*/
-.p-staff__slider {
-  -webkit-transform: translateX(-60px);
-  margin-top: 5rem;
-  padding-bottom: 12.8rem;
-          transform: translateX(-60px);
-}
 .p-staff__item {
   position: relative;
-  width: 24.6rem !important;
-  height: 31.1rem !important;
+  width: 24.6rem;
+  height: 31.1rem;
 }
 .p-staff__item:nth-child(odd) {
   -webkit-transform: translateY(25px);
@@ -2922,6 +3006,9 @@ body.blog-detail .c-breadcrumbs {
 .p-faq__item:first-child {
   border-top: 1px solid #988c2c;
 }
+.p-faq__item:first-child .p-faq__text {
+  display: block;
+}
 .p-faq__title {
   position: relative;
   padding: 0 5.2rem 0 3.5rem;
@@ -2990,77 +3077,95 @@ body.blog-detail .c-breadcrumbs {
   font-size: 1.4rem;
   line-height: 2.2857142857;
   font-family: "Noto Sans JP";
-  letter-spacing: 0.15em;
+  letter-spacing: 0em;
 }
 
 .l-section__subTitle.-faq:not(:first-of-type) {
   margin-top: 5rem;
 }
 
-/* contact
+/* p-entry
 ----------------------------------------- */
-.p-contact {
-  padding: 11.3rem 0 15.2rem 0;
+/*==============================================================
+.p-entry
+==============================================================*/
+body.entry .c-breadcrumbs {
+  margin-top: 6rem;
 }
-.p-contact .l-container .l-section__text {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.8666666667;
-  letter-spacing: 0.1em;
+body.entry .l-section__subTitle {
+  margin-top: 1.6rem;
 }
-.p-contact__lead {
-  margin-top: 8rem;
+
+.p-entry {
+  background: #faf7f1;
 }
-.p-contact__lead .l-section__text {
-  margin-top: 3.5rem;
-}
-.p-contact__progress {
-  -webkit-box-pack: justify;
-  display: -webkit-box;
-  display: flex;
-          justify-content: space-between;
-  margin-top: 6.4rem;
-}
-.p-contact__progressItem {
-  width: 31.83%;
-  padding: 1.6rem 0;
-  background: #f0f0f0;
-  color: #b4b4b4;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.4666666667;
-  font-family: "Noto Sans JP";
-  letter-spacing: 0.15em;
-  text-align: center;
-}
-.p-contact__progressItem.-current {
-  background: #988c2c;
-  color: #fff;
-}
-.p-contact__progressItem:not(:last-child) {
-  margin-right: 1.6rem;
-}
-.p-contact__button {
-  width: 100%;
-  margin-top: 6.4rem;
-  text-align: center;
-}
-.p-contact__button a {
-  -webkit-transition: all 0.5s ease;
-  display: block;
-  padding: 2.5rem 0;
-  border: 1px solid #222222;
-  background: #222222;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 1.25;
-  letter-spacing: 0.15em;
-  transition: all 0.5s ease;
-}
-.p-contact__button a:hover {
+.p-entry__wrapper {
+  padding: 3rem 1.5rem;
+  border-radius: 11px;
   background: #fff;
+}
+.p-entry__headTitle {
   color: #222222;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+  text-align: center;
+}
+.p-entry__subTitle--color {
+  color: #988c2c;
+}
+.p-entry__attention {
+  color: #222222;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4545454545;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+}
+.p-entry__attention.-head {
+  margin-top: 3rem;
+}
+
+/* p-entry-thanks
+----------------------------------------- */
+/*==============================================================
+.p-entry
+==============================================================*/
+body.entry-thanks .c-breadcrumbs {
+  margin-top: 6rem;
+}
+body.entry-thanks .l-section__subTitle {
+  margin-top: 1.6rem;
+}
+
+.p-entry-thanks {
+  background: #faf7f1;
+}
+.p-entry-thanks__wrapper {
+  padding: 3rem 1.5rem;
+  border-radius: 11px;
+  background: #fff;
+}
+.p-entry-thanks__headTitle {
+  color: #222222;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+  text-align: center;
+}
+.p-entry-thanks__attention {
+  margin-top: 3rem;
+  color: #222222;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4545454545;
+  font-family: "Noto Sans JP";
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 /* u-font
@@ -3311,6 +3416,14 @@ body.blog-detail .c-breadcrumbs {
 
 .u-w900 {
   font-weight: 900;
+}
+
+/* u-background
+----------------------------------------- */
+.u-background {
+  width: 100%;
+  height: 10rem;
+  background: #fff;
 }
 
 .splide__container {
@@ -4737,6 +4850,12 @@ button.swiper-pagination-bullet {
   .p-faq .l-container {
     padding: 14.5rem 4rem 17.6rem !important;
   }
+  .p-entry .l-container {
+    padding: 14.5rem 4rem 17.6rem !important;
+  }
+  .p-entry-thanks .l-container {
+    padding: 14.5rem 4rem 17.6rem !important;
+  }
   .l-footer__container {
     padding: 16.8rem 0 2.4rem;
   }
@@ -4771,6 +4890,10 @@ button.swiper-pagination-bullet {
   body.subpage .l-main .l-section__subTitle.-career {
     font-size: 3.2rem;
   }
+  body.subpage .l-main .l-section__subTitle.-entry {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
   body.subpage .l-main .l-intro {
     margin-top: 4.4rem;
     font-size: 1.6rem;
@@ -4780,44 +4903,78 @@ button.swiper-pagination-bullet {
     text-align: center;
   }
   .l-form {
-    margin-top: 11.2rem;
+    margin-top: 9.3rem;
+  }
+  .l-form__list {
+    padding-top: 9.7rem;
   }
   .l-form__item {
     -webkit-box-pack: justify;
-    -webkit-box-align: center;
+    -webkit-box-align: baseline;
     display: -webkit-box;
     display: flex;
-            align-items: center;
+            align-items: baseline;
             justify-content: space-between;
   }
-  .l-form__dt {
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 1.5;
-    letter-spacing: 0.15em;
+  .l-form__item.-radio {
+    margin-top: 4.2rem !important;
   }
-  .l-form__dd {
-    width: 69.375%;
+  .l-form__item.-message {
+    -webkit-box-align: start;
+            align-items: flex-start;
   }
-  .l-form__dd .select {
-    width: 41.2739%;
+  .l-form__item.-message .l-form__dt {
+    padding-top: 1.6rem;
   }
-  .l-form__dd.-zip span input {
-    width: 41.2739%;
+  .l-form__item:not(:first-child) {
+    margin-top: 2.7rem;
   }
-  .l-form__dd.-radio {
+  .l-form__inputWrapper {
     margin-top: 0;
   }
-  .l-form__dd.-radio .-flex:not(:last-child) {
-    margin-right: 3.9rem;
+  .l-form__inputWrapper input {
+    width: 16.8rem !important;
+  }
+  .l-form__inputWrapper.-year span {
+    padding-left: 1rem;
+  }
+  .l-form__birthday--bottom {
+    display: -webkit-box;
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  .l-form__birthday--bottom .l-form__inputWrapper span {
+    padding-left: 0.5rem;
+  }
+  .l-form__birthday--bottom .l-form__inputWrapper:first-of-type {
+    margin-right: 2.4rem;
+  }
+  .l-form__dt {
+    width: 12.8rem;
+    font-size: 1.6rem;
+  }
+  .l-form__dd {
+    width: 57.5rem;
+    margin-top: 0;
+  }
+  .l-form__dd select {
+    width: 16.8rem;
+  }
+  .l-form__dd.-radio-sec {
+    margin-top: 1.1rem;
+  }
+  .l-form__dd input[type=radio] {
+    margin-right: 0.8rem;
   }
   .l-form__privacy {
-    width: 69.375%;
-    margin: 5.2rem 0 0 auto;
+    margin-top: 10rem;
   }
   .l-form__submit {
-    width: 69.375%;
-    margin: 5.2rem 0 0 auto;
+    margin-top: 6.1rem;
+  }
+  .l-form__submit input {
+    width: 25.6rem;
+    margin: 0 auto;
   }
   .p-home-mv__blogText {
     -webkit-box-pack: justify;
@@ -5156,42 +5313,37 @@ button.swiper-pagination-bullet {
   .p-faq__text {
     margin-top: 3.5rem;
     padding: 0 5.2rem 0 6.5rem;
-    font-weight: 400;
     font-size: 1.6rem;
     line-height: 2;
-    letter-spacing: 0.15em;
   }
   .l-section__subTitle.-faq:not(:first-of-type) {
     margin-top: 8.8rem;
   }
-  .p-contact {
-    padding: 11.7rem 0 19.2rem 0;
+  body.entry .l-section__subTitle {
+    margin-top: 2.9rem;
   }
-  .p-contact .l-container {
-    max-width: 960px;
-  }
-  .p-contact__lead {
-    margin-top: 11.2rem;
-  }
-  .p-contact__lead .l-section__text {
-    margin-top: 3.8rem;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.8666666667;
-    letter-spacing: 0.1em;
-  }
-  .p-contact__progress {
-    margin-top: 8.6rem;
-  }
-  .p-contact__progressItem {
-    font-weight: 600;
+  .p-entry__headTitle {
     font-size: 2.4rem;
-    line-height: 1.1666666667;
-    letter-spacing: 0.15em;
+    line-height: 1;
   }
-  .p-contact__button {
-    width: 69.375%;
-    margin: 8rem auto 0;
+  .p-entry__attention {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  body.entry-thanks .l-section__subTitle {
+    margin-top: 2.9rem;
+  }
+  .p-entry-thanks__headTitle {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+  .p-entry-thanks__attention {
+    margin-top: 5.2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  .u-background {
+    height: 13.9rem;
   }
 }
 
@@ -5277,6 +5429,12 @@ button.swiper-pagination-bullet {
   }
   .p-faq .l-container {
     padding: 14.5rem 19rem 13.9rem !important;
+  }
+  .p-entry .l-container {
+    padding: 3.5rem 24rem 5.7rem !important;
+  }
+  .p-entry-thanks .l-container {
+    padding: 3.5rem 24rem 5.7rem !important;
   }
   .l-footer {
     padding-bottom: 6.4rem;
@@ -5798,13 +5956,9 @@ button.swiper-pagination-bullet {
     width: 50%;
     padding-top: 17.6rem;
   }
-  .p-staff__slider {
-    margin-top: 5.2rem;
-    padding-bottom: 15rem;
-  }
   .p-staff__item {
-    width: 30rem !important;
-    height: 37.9rem !important;
+    width: 30rem;
+    height: 37.9rem;
   }
   .p-staff__textBox {
     top: 33.6rem;
@@ -5945,6 +6099,20 @@ button.swiper-pagination-bullet {
   .p-faq__list {
     margin-top: 11.2rem;
   }
+  body.entry .c-breadcrumbs {
+    margin-top: 11.8rem;
+  }
+  .p-entry__attention {
+    display: block;
+    margin: 0 !important;
+  }
+  .p-entry__attentionBlock {
+    margin-top: 5.2rem;
+    margin-left: 11.4rem;
+  }
+  body.entry-thanks .c-breadcrumbs {
+    margin-top: 11.8rem;
+  }
   .u-pc {
     display: block;
   }
@@ -5975,6 +6143,12 @@ button.swiper-pagination-bullet {
   .p-faq .l-container {
     padding: 4rem;
   }
+  .p-entry .l-container {
+    padding: 4rem;
+  }
+  .p-entry-thanks .l-container {
+    padding: 4rem;
+  }
   .l-inner {
     padding: 0 4.7rem;
   }
@@ -5992,6 +6166,12 @@ button.swiper-pagination-bullet {
   }
   .p-blog__media {
     margin-top: 1.8rem;
+  }
+  .p-entry__wrapper {
+    padding: 5.6rem 7.1rem 8.1rem;
+  }
+  .p-entry-thanks__wrapper {
+    padding: 2.7rem 7.1rem 9.5rem;
   }
 }
 
