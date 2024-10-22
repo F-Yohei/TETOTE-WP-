@@ -1169,8 +1169,7 @@ body.is-active {
   background: #afa86f;
 }
 .l-menu-button__link.-entry:hover {
-  background: #fff;
-  color: #ebc110;
+  background: #988c2c;
 }
 .l-menu-button__link.-recruit {
   border: 2px solid #222222;
@@ -5339,7 +5338,6 @@ button.swiper-pagination-bullet {
   }
   .p-faq__text {
     margin-top: 3.5rem;
-    padding: 0 5.2rem 0 6.5rem;
     font-size: 1.6rem;
     line-height: 2;
   }
@@ -5550,8 +5548,8 @@ button.swiper-pagination-bullet {
     font-size: 1.6rem;
   }
   .l-hamburger__toggle {
-    top: 4.8rem;
-    right: 2.3rem;
+    top: 3.4rem;
+    right: 4.5rem;
   }
   .l-hamburger__toggle.is-active .l-hamburger__toggleWrap span:nth-of-type(1) {
     -webkit-transform: translateY(2rem) rotate(-45deg);
@@ -5596,8 +5594,8 @@ button.swiper-pagination-bullet {
     display: flex;
     z-index: 101;
     position: absolute;
-    top: 5rem;
-    right: 11.5rem;
+    top: 3.8rem;
+    right: 12.2rem;
   }
   .l-header__buttonLink {
     -webkit-box-pack: center;
@@ -5751,14 +5749,15 @@ button.swiper-pagination-bullet {
     height: 82.3rem;
   }
   .p-home-mv__catch {
-    top: 34.1%;
-    left: 4.1%;
+    top: 28.6rem;
+    left: 6.6rem;
     font-size: 9.6rem;
+    line-height: 1.2;
   }
   .p-home-mv__subCatch {
     top: 73%;
-    width: 35.6%;
-    padding: 0 0 0 5.8rem;
+    width: 51.5rem;
+    padding: 0 0 0 6.6rem;
     font-weight: 700;
     font-size: 2.4rem;
   }
