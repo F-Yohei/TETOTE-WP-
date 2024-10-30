@@ -34,7 +34,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body id="js-body" <?php body_class(); ?>>
     <div id="top" class="wrap" ontouchstart="">
         <!-- header -->
         <header id="js-header" class="l-header">
@@ -122,7 +122,7 @@
                                             <p class="l-menu__title">BLOG</p>
                                             <p class="l-menu__subTitle">採用ブログ</p>
                                         </a>
-                                    <li class="l-menu__item u-pc">
+                                    <li class="l-menu__item -button u-pc">
                                         <a href="<?php echo esc_url(home_url('details')); ?>"
                                             class="l-menu-button__link -recruit">募集要項</a>
                                     </li>
@@ -147,7 +147,7 @@
                                             <p class="l-menu__subTitle">よくある質問</p>
                                         </a>
                                     </li>
-                                    <li class="l-menu__item u-pc">
+                                    <li class="l-menu__item -button u-pc">
                                         <a href="<?php echo esc_url(home_url('entry')); ?>"
                                             class="l-menu-button__link -entry">ENTRY</a>
                                     </li>
@@ -174,3 +174,139 @@
             </div>
         </header>
         <!-- /header -->
+
+        <!-- スクロールで上から出てくるヘッダー -->
+        <div id="js-fixed-header" class="l-header -sub fixed-header">
+            <div class="l-header__inner">
+                <!-- header-logo -->
+                <h1 class="l-header__logo">
+                    <a href="<?php echo esc_url(home_url('')); ?>" class="l-header__logoLink">
+                        <figure>
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo01.svg"
+                                    alt="ロゴ" id="logo-sub" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
+                                    alt="ロゴ" id="logo2-sub" style="display:none" />
+                            </picture>
+                        </figure>
+                    </a>
+                    <a href="<?php echo esc_url(home_url('')); ?>" class="l-header__logoLink--subpage">
+                        <figure>
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
+                                    alt="ロゴ" />
+                            </picture>
+                        </figure>
+                    </a>
+                </h1>
+                <h1 class="l-header__logo -sub">
+                    <a href="<?php echo esc_url(home_url('')); ?>" class="l-header__logoLink">
+                        <figure>
+                            <picture>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
+                                    alt="ロゴ" />
+                            </picture>
+                        </figure>
+                    </a>
+                </h1>
+                <!-- /header-logo -->
+                <div class="l-header__right">
+                    <div class="l-header__button">
+                        <a href="<?php echo esc_url(home_url('details')); ?>"
+                            class="l-header__buttonLink -recruit">募集要項</a>
+                        <a href="<?php echo esc_url(home_url('entry')); ?>"
+                            class="l-header__buttonLink -entry">ENTRY</a>
+                    </div>
+                    <!-- header-nav-toggle -->
+                    <button id="js-hamburger-toggle-sub" type="button" class="l-hamburger__toggle -sub">
+                        <div class="l-hamburger__toggleWrap">
+                            <span class="l-hamburger__toggleLine"></span>
+                            <span class="l-hamburger__toggleLine"></span>
+                            <span class="l-hamburger__toggleLine"></span>
+                        </div>
+                        <p class="l-hamburger__text">MENU</p>
+                    </button>
+                </div>
+                <!-- /header-nav-toggle -->
+                <div id="js-menu-sub" class="l-menu -sub">
+                    <div class="l-menu__wrapper">
+                        <h1 class="l-menu__logo">
+                            <a href="<?php echo esc_url(home_url('')); ?>" class="l-menu__logoLink">
+                                <figure>
+                                    <picture>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
+                                            alt="ロゴ" />
+                                    </picture>
+                                </figure>
+                            </a>
+                        </h1>
+                        <nav class="l-menu__nav">
+                            <ul class="l-menu__list">
+                                <ul class="l-menu__subList--left">
+                                    <li class="l-menu__item">
+                                        <a href="<?php echo esc_url(home_url('about-us')); ?>" class="l-menu__link">
+                                            <p class="l-menu__title">ABOUT US</p>
+                                            <p class="l-menu__subTitle">TETOTEについて</p>
+                                        </a>
+                                    </li>
+                                    <li class="l-menu__item">
+                                        <a href="<?php echo esc_url(home_url('staff')); ?>" class="l-menu__link">
+                                            <p class="l-menu__title">STAFF</p>
+                                            <p class="l-menu__subTitle">社員について</p>
+                                        </a>
+                                    </li>
+                                    <li class="l-menu__item">
+                                        <a href="<?php echo esc_url(home_url('blog')); ?>" class="l-menu__link">
+                                            <p class="l-menu__title">BLOG</p>
+                                            <p class="l-menu__subTitle">採用ブログ</p>
+                                        </a>
+                                    <li class="l-menu__item -button u-pc">
+                                        <a href="<%= path %>/details" class="l-menu-button__link -recruit">募集要項</a>
+                                    </li>
+                                </ul>
+                                </li>
+                                <ul class="l-menu__subList--right">
+                                    <li class="l-menu__item">
+                                        <a href="<?php echo esc_url(home_url('benefits')); ?>" class="l-menu__link">
+                                            <p class="l-menu__title">BENEFITS</p>
+                                            <p class="l-menu__subTitle">福利厚生について</p>
+                                        </a>
+                                    </li>
+                                    <li class="l-menu__item">
+                                        <a href="<?php echo esc_url(home_url('career')); ?>" class="l-menu__link">
+                                            <p class="l-menu__title">CAREER</p>
+                                            <p class="l-menu__subTitle">研修制度とキャリアパス</p>
+                                        </a>
+                                    </li>
+                                    <li class="l-menu__item -border-bottom">
+                                        <a href="<?php echo esc_url(home_url('faq')); ?>" class="l-menu__link">
+                                            <p class="l-menu__title">FAQ</p>
+                                            <p class="l-menu__subTitle">よくある質問</p>
+                                        </a>
+                                    </li>
+                                    <li class="l-menu__item -button u-pc">
+                                        <a href="<?php echo esc_url(home_url('entry')); ?>"
+                                            class="l-menu-button__link -entry">ENTRY</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <!-- l-menu-button -->
+                            <div class="l-menu-button u-sp">
+                                <ul class="l-menu-button__list">
+                                    <li class="l-menu-button__item">
+                                        <a href="<?php echo esc_url(home_url('details')); ?>"
+                                            class="l-menu-button__link -recruit">募集要項</a>
+                                    </li>
+                                    <li class="l-menu-button__item">
+                                        <a href="<?php echo esc_url(home_url('entry')); ?>"
+                                            class="l-menu-button__link -entry">ENTRY</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /l-menu-button -->
+                        </nav>
+                        <!-- /header-menu -->
+                    </div>
+                </div>
+            </div>
+        </div>

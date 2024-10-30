@@ -124,13 +124,13 @@ function add_files()
   );
 
   /* IEでpictureタグを機能させる */
-  wp_enqueue_script(
-    'polyfill',
-    'https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement',
-    ['jquery'],
-    '1.0.0',
-    true
-  );
+  // wp_enqueue_script(
+  //   'polyfill',
+  //   'https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement',
+  //   ['jquery'],
+  //   '1.0.0',
+  //   true
+  // );
 
   wp_enqueue_script(
     'splide',
@@ -153,14 +153,14 @@ function add_files()
   } elseif (is_singular('staff')) {
     wp_enqueue_script(
       'gsap',
-      'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js',
+      get_stylesheet_directory_uri() . '/assets/js/gsap.min.js',
       ['jquery'],
       '1.0.0',
       true
     );
     wp_enqueue_script(
-      'ScrollTrigger',
-      'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js',
+      'scrollTrigger',
+      get_stylesheet_directory_uri() . '/assets/js/ScrollTrigger.min.js',
       ['jquery'],
       '1.0.0',
       true

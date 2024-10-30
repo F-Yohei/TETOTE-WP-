@@ -213,6 +213,13 @@ Template Name: TOP page
                                 </div>
                             </li>
                         </ul>
+                        <!-- 矢印を追加 -->
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev button prev"><span
+                                    class="arrow -prev"></span></button>
+                            <button class="splide__arrow splide__arrow--next button next"><span
+                                    class="arrow"></span></button></button>
+                        </div>
                     </div>
                 </div>
                 <!-- もっと見るボタン -->
@@ -238,7 +245,7 @@ Template Name: TOP page
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/benefits_img01.png"
                                     alt="" width="" height="" loading="lazy" decoding="async">
                             </figure>
-                            <span class="p-home-benefit__circle c-circle">
+                            <span class="p-home-benefit__circle c-circle -benefits">
                                 <span class="p-home-benefit__arrow c-arrow"></span>
                             </span>
                         </a>
@@ -253,7 +260,7 @@ Template Name: TOP page
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/benefits_img02.png"
                                     alt="" width="" height="" loading="lazy" decoding="async">
                             </figure>
-                            <span class="p-home-benefit__circle c-circle">
+                            <span class="p-home-benefit__circle c-circle -benefits">
                                 <span class="p-home-benefit__arrow c-arrow"></span>
                             </span>
                         </a>
