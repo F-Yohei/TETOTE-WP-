@@ -27,7 +27,7 @@ Template Name: single-staff page
                             <p class="p-staff-detail__subCatch"><?php echo CFS()->get('message-bottom'); ?></p>
                         </div>
                         <div class="p-staff-detail__content">
-                            <p class="p-staff-detail__title"><?php echo CFS()->get('osccupation'); ?></p>
+                            <p class="p-staff-detail__title"><?php echo CFS()->get('occupation'); ?></p>
                             <h3 class="p-staff-detail__name">
                                 <?php echo CFS()->get('name'); ?><span><?php echo CFS()->get('year'); ?></span></h3>
                             <p class="p-staff-detail__comment">
@@ -69,7 +69,7 @@ Template Name: single-staff page
                 $counter = 1;
               ?>
                             <?php foreach ($fields as $field) : ?>
-                            <li id="item<?php echo $counter; ?>"
+                            <li id="item0<?php echo $counter; ?>"
                                 class="p-staff-detail__contentItem js-block0<?php echo $counter; ?>">
                                 <h2 class="p-staff-detail__contentTitle">
                                     <?php echo esc_html($field['title']); ?>
@@ -89,22 +89,22 @@ Template Name: single-staff page
                         <p class="p-staff-detail__toc">目次</p>
                         <ul class="p-staff-detail__navList">
                             <li class="p-staff-detail__navItem">
-                                <a href="#item1" class="p-staff-detail__link js-link1 is-active">・普段の業務内容について</a>
+                                <a href="#item01" class="p-staff-detail__link js-link01">・普段の業務内容について</a>
                             </li>
                             <li class="p-staff-detail__navItem">
-                                <a href="#item2" class="p-staff-detail__link js-link2">・学生時代に力を入れたことは？</a>
+                                <a href="#item02" class="p-staff-detail__link js-link02">・学生時代に力を入れたことは？</a>
                             </li>
                             <li class="p-staff-detail__navItem">
-                                <a href="#item3" class="p-staff-detail__link js-link3">・TETOTEを志望した理由は？</a>
+                                <a href="#item03" class="p-staff-detail__link js-link03">・TETOTEを志望した理由は？</a>
                             </li>
                             <li class="p-staff-detail__navItem">
-                                <a href="#item4" class="p-staff-detail__link js-link4">・やりがいを感じる瞬間は？</a>
+                                <a href="#item04" class="p-staff-detail__link js-link04">・やりがいを感じる瞬間は？</a>
                             </li>
                             <li class="p-staff-detail__navItem">
-                                <a href="#item5" class="p-staff-detail__link js-link5">・どんな人と一緒に働きたい？</a>
+                                <a href="#item05" class="p-staff-detail__link js-link05">・どんな人と一緒に働きたい？</a>
                             </li>
                             <li class="p-staff-detail__navItem">
-                                <a href="#item6" class="p-staff-detail__link js-link6">・応募者へのメッセージ</a>
+                                <a href="#item06" class="p-staff-detail__link js-link06">・応募者へのメッセージ</a>
                             </li>
                         </ul>
                     </nav>
@@ -149,9 +149,9 @@ Template Name: single-staff page
                                     </div>
                                     <div class="p-staff-member__content">
                                         <p class="p-staff-member__title">
-                                            <span><?php echo CFS()->get('osccupation'); ?></span>
-                                            <span
-                                                class="p-staff-member__title--pl"><?php echo CFS()->get('year'); ?></span>
+                                            <span><?php echo CFS()->get('occupation'); ?></span>
+                                            <span class="p-staff-member__title--pl"><?php echo CFS()->get('year'); ?>
+                                            </span>
                                         </p>
                                         <h3 class="p-staff-member__name"><?php echo CFS()->get('name'); ?></h3>
                                     </div>

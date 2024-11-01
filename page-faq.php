@@ -39,12 +39,9 @@ Template Name: faq page
         <section class="p-faq">
             <div class="l-container">
                 <nav class="p-faq__nav c-nav u-pc">
-                    <a href="#apply" class="p-faq__navLink c-nav__link">応募・選考について<span
-                            class="p-faq__arrow c-nav__arrow">↓</span></a>
-                    <a href="#career" class="p-faq__navLink c-nav__link">キャリアについて<span
-                            class="p-faq__arrow c-nav__arrow">↓</span></a>
-                    <a href="#benefits" class="p-faq__navLink c-nav__link">福利厚生について<span
-                            class="p-faq__arrow c-nav__arrow">↓</span></a>
+                    <a href="#apply" class="p-faq__navLink c-nav__link">応募・選考について</a>
+                    <a href="#career" class="p-faq__navLink c-nav__link">キャリアについて</a>
+                    <a href="#benefits" class="p-faq__navLink c-nav__link">福利厚生について</a>
                 </nav>
                 <div class="p-faq__container">
                     <h2 id="apply" class="l-section__subTitle -faq">応募・選考について</h2>

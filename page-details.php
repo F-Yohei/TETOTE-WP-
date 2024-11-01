@@ -42,12 +42,9 @@ Template Name: details page
                 <h2 class="l-section__subTitle -details">あなたが輝ける場所が、ここにはある</h2>
                 <p class="p-details__text">TETOTEでは、コンサルタントを中心に、様々な職種を募集しています。 </p>
                 <nav class="p-details__nav c-nav u-pc">
-                    <a href="#consul" class="p-details__navLink c-nav__link">コンサルタント<span
-                            class="p-details__arrow c-nav__arrow">↓</span></a>
-                    <a href="#sales" class="p-details__navLink c-nav__link">ソリューション営業<span
-                            class="p-details__arrow c-nav__arrow">↓</span></a>
-                    <a href="#engineer" class="p-details__navLink c-nav__link">システムエンジニア<span
-                            class="p-details__arrow c-nav__arrow">↓</span></a>
+                    <a href="#consul" class="p-details__navLink c-nav__link">コンサルタント</a>
+                    <a href="#sales" class="p-details__navLink c-nav__link">ソリューション営業</a>
+                    <a href="#engineer" class="p-details__navLink c-nav__link">システムエンジニア</a>
                 </nav>
                 <div class="p-details__tableContainer">
                     <h2 id="consul" class="l-section__subTitle -details">募集要項-コンサルタント</h2>
@@ -187,4 +184,4 @@ Template Name: details page
 </main>
 <!-- /main -->
 <!-- footer呼び出し -->
-<?php get_footer(); ?>s
+<?php get_footer(); ?>

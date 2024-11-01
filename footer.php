@@ -29,7 +29,7 @@
                 <nav class="l-footer__nav">
                     <ul class="l-footer__navList">
                         <li class="l-footer__navItem">
-                            <a href="./" class="l-footer__navLink">ホーム</a>
+                            <a href="<?php echo esc_url(home_url('')); ?>" class="l-footer__navLink">ホーム</a>
                         </li>
                         <li class="l-footer__navItem">
                             <a href="<?php echo esc_url(home_url('about-us')); ?>"

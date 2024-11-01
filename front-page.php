@@ -120,98 +120,49 @@ Template Name: TOP page
                 <div id="splide3" class="splide p-home-staff__slider" aria-label="">
                     <div class="p-home-staff__track splide__track">
                         <ul class="p-home-staff__list splide__list">
+                            <?php
+                            $args = array(
+                                'post_type' => 'staff',
+                                'posts_per_page' => 10,
+                            );
+                            $the_query = new WP_Query($args);
+                            ?>
+                            <?php if ($the_query->have_posts()): ?>
+                            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                             <li class="p-home-staff__item splide__slide">
-                                <div class="p-home-staff__img">
-                                    <figure>
-                                        <picture>
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/syain_img01.jpg"
-                                                loading="lazy" alt="" />
-                                        </picture>
-                                    </figure>
-                                    <div class="p-home-staff__textBox">
-                                        <div class="p-home-staff__comment">
-                                            <p>「あなたが担当で良かった」</p>
-                                            <p>この一言が、最高のやりがい</p>
-                                        </div>
-                                        <div class="p-home-staff__content">
-                                            <p class="p-home-staff__title">
-                                                <span>コンサルタント</span>
-                                                <span>2011年入社</span>
-                                            </p>
-                                            <h3 class="p-home-staff__name">西村 優</h3>
+                                <a href="<?php the_permalink(); ?>">
+                                    <div class="p-home-staff__img">
+                                        <figure>
+                                            <picture>
+                                                <?php if (has_post_thumbnail()) :
+                                                            the_post_thumbnail('large'); ?>
+                                                <?php else : ?>
+                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
+                                                    alt="アイキャッチ画像がありません" />
+                                                <?php endif; ?>
+                                            </picture>
+                                        </figure>
+                                        <div class="p-home-staff__textBox">
+                                            <div class="p-home-staff__comment">
+                                                <p><?php echo CFS()->get('message-top'); ?></p>
+                                                <p><?php echo CFS()->get('message-bottom'); ?></p>
+                                            </div>
+                                            <div class="p-home-staff__content">
+                                                <p class="p-home-staff__title">
+                                                    <span><?php echo CFS()->get('osccupation'); ?></span>
+                                                    <span><?php echo CFS()->get('year'); ?></span>
+                                                </p>
+                                                <h3 class="p-home-staff__name"><?php echo CFS()->get('name'); ?></h3>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </li>
-                            <li class="p-home-staff__item splide__slide">
-                                <div class="p-home-staff__img">
-                                    <figure>
-                                        <picture>
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/syain_img02.jpg"
-                                                loading="lazy" alt="" />
-                                        </picture>
-                                    </figure>
-                                    <div class="p-home-staff__textBox">
-                                        <div class="p-home-staff__comment">
-                                            <p>全力で考えぬける環境</p>
-                                            <p>試練の数だけ強くなれました</p>
-                                        </div>
-                                        <div class="p-home-staff__content">
-                                            <p class="p-home-staff__title">
-                                                <span>コンサルタント</span>
-                                                <span>2015年入社</span>
-                                            </p>
-                                            <h3 class="p-home-staff__name">橋本 拓也</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="p-home-staff__item splide__slide">
-                                <div class="p-home-staff__img">
-                                    <figure>
-                                        <picture>
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/syain_img03.jpg"
-                                                loading="lazy" alt="" />
-                                        </picture>
-                                    </figure>
-                                    <div class="p-home-staff__textBox">
-                                        <div class="p-home-staff__comment">
-                                            <p>お客様も知らない課題を</p>
-                                            <p>一緒に探し出す醍醐味</p>
-                                        </div>
-                                        <div class="p-home-staff__content">
-                                            <p class="p-home-staff__title">
-                                                <span>ソリューション営業</span>
-                                                <span>2017年入社</span>
-                                            </p>
-                                            <h3 class="p-home-staff__name">青木 美月</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="p-home-staff__item splide__slide">
-                                <div class="p-home-staff__img">
-                                    <figure>
-                                        <picture>
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/syain_img04.jpg"
-                                                loading="lazy" alt="" />
-                                        </picture>
-                                    </figure>
-                                    <div class="p-home-staff__textBox">
-                                        <div class="p-home-staff__comment">
-                                            <p>「あなたが担当で良かった」</p>
-                                            <p>この一言が、最高のやりがい</p>
-                                        </div>
-                                        <div class="p-home-staff__content">
-                                            <p class="p-home-staff__title">
-                                                <span>コンサルタント</span>
-                                                <span>2004年入社</span>
-                                            </p>
-                                            <h3 class="p-home-staff__name">佐々木 健</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            <?php endwhile; ?>
+                            <?php else: ?>
+                            <!-- ここに投稿がない場合の記述 -->
+                            <?php endif;
+                            wp_reset_postdata(); ?>
                         </ul>
                         <!-- 矢印を追加 -->
                         <div class="splide__arrows">
@@ -287,7 +238,7 @@ Template Name: TOP page
                     <?php
                     $args = array(
                         'post_type' => 'blog',
-                        'posts_per_page' => 8,
+                        'posts_per_page' => 4,
                     );
                     $the_query = new WP_Query($args);
                     ?>
@@ -318,13 +269,13 @@ Template Name: TOP page
                     <?php endif; ?>
                     <?php wp_reset_postdata(); ?>
                 </div>
+                <a href=".//blog" class="p-home-blog__more">
+                    <span class="p-home-blog__circle c-circle -blog">
+                        <span class="p-home-blog__arrow c-arrow -blog"></span>
+                    </span>
+                    VIEW MORE
+                </a>
             </div>
-            <a href=".//blog" class="p-home-blog__more">
-                <span class="p-home-blog__circle c-circle -blog">
-                    <span class="p-home-blog__arrow c-arrow -blog"></span>
-                </span>
-                VIEW MORE
-            </a>
             </div>
         </section>
         <!-- p-home-recruit -->

@@ -96,6 +96,7 @@ function add_files()
   /* WordPress提供のjquery.jsを読み込まない */
   wp_deregister_script('jquery');
 
+
   /* jQueryの読み込み */
   wp_enqueue_script(
     'jquery',
@@ -104,6 +105,25 @@ function add_files()
     '',
     false
   );
+
+    /* gsap.min.js */
+  wp_enqueue_script(
+    'gsap',
+    get_stylesheet_directory_uri() . '/assets/js/gsap.min.js',
+    ['jquery'],
+    '1.0.0',
+    true
+  );
+
+  /* ScrollTrigger.min.js */
+  wp_enqueue_script(
+    'scrollTrigger',
+    get_stylesheet_directory_uri() . '/assets/js/ScrollTrigger.min.js',
+    ['jquery'],
+    '1.0.0',
+    true
+  );
+
 
   /* 共通のJSファイル */
   wp_enqueue_script(
@@ -122,15 +142,6 @@ function add_files()
     '1.0.0',
     true
   );
-
-  /* IEでpictureタグを機能させる */
-  // wp_enqueue_script(
-  //   'polyfill',
-  //   'https://polyfill.io/v3/polyfill.min.js?features=HTMLPictureElement',
-  //   ['jquery'],
-  //   '1.0.0',
-  //   true
-  // );
 
   wp_enqueue_script(
     'splide',
@@ -151,20 +162,6 @@ function add_files()
     );
     /* staff詳細ページで読み込むJSファイル */
   } elseif (is_singular('staff')) {
-    wp_enqueue_script(
-      'gsap',
-      get_stylesheet_directory_uri() . '/assets/js/gsap.min.js',
-      ['jquery'],
-      '1.0.0',
-      true
-    );
-    wp_enqueue_script(
-      'scrollTrigger',
-      get_stylesheet_directory_uri() . '/assets/js/ScrollTrigger.min.js',
-      ['jquery'],
-      '1.0.0',
-      true
-    );
     wp_enqueue_script(
       'staff',
       get_stylesheet_directory_uri() . '/assets/js/staffdetail.bundle.js',
