@@ -8,7 +8,7 @@ Template Name: faq page
 <!-- main -->
 <main class="l-main">
     <article>
-        <div id="js-top" class="p-hero">
+        <div id="js-top" class="p-hero -faq">
             <div class="l-section__titleWrapper">
                 <h1 class="l-section__title">FAQ</h1>
                 <h2 class="l-section__title--secondary">よくある質問</h2>

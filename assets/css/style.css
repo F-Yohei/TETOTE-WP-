@@ -217,7 +217,7 @@
 .c-circle.-blog {
   width: 5.9rem;
   height: 5.9rem;
-  border: 1px solid #fff;
+  border: 1px solid #222222;
   background: #fff;
 }
 .c-circle.-blog:hover {
@@ -1267,21 +1267,18 @@ body.is-active {
 }
 .l-menu-button__link.-entry {
   margin-top: 1.3rem;
-  border: 2px solid #afa86f;
+  border: 1px solid #afa86f;
   background: #afa86f;
 }
 .l-menu-button__link.-entry:hover {
   background: #988c2c;
 }
 .l-menu-button__link.-recruit {
-  border: 2px solid #222222;
+  border: 1px solid #222222;
   background: #222222;
+  font-weight: 700;
+  font-family: "Noto Sans JP";
 }
-.l-menu-button__link.-recruit:hover {
-  background: #fff;
-  color: #222222;
-}
-
 /* section
 ----------------------------------------- */
 body.subpage .l-main .l-section__titleWrapper {
@@ -1323,7 +1320,7 @@ body.subpage .l-main .l-section__title--tertiary {
   margin-top: 2.1rem;
   padding: 0.3rem 0.4rem;
   background: #fff;
-  color: #afa86f;
+  color: #988c2c;
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 1;
@@ -1480,7 +1477,7 @@ body.subpage .l-main .l-intro {
   padding-left: 0.5rem;
 }
 .l-form__dt {
-  color: #222222;
+  color: #000;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.448125;
@@ -1508,7 +1505,7 @@ body.subpage .l-main .l-intro {
   width: 100%;
   height: 5.6rem;
   padding: 0 2rem;
-  border: 1px solid #988c2c;
+  border: 1px solid #afa86f;
   border-radius: 10px;
   background: #faf7f1;
 }
@@ -1518,7 +1515,7 @@ body.subpage .l-main .l-intro {
   width: 100%;
   height: 5.6rem;
   padding: 0 2rem;
-  border: 1px solid #988c2c;
+  border: 1px solid #afa86f;
   border-radius: 10px;
   background: #faf7f1;
   font-size: 1.2rem;
@@ -1582,7 +1579,7 @@ body.subpage .l-main .l-intro {
   width: 100%;
   height: 24rem;
   padding: 1.8rem 1.9rem;
-  border: 1px solid #988c2c;
+  border: 1px solid #afa86f;
   border-radius: 10px;
   background: #faf7f1;
 }
@@ -1593,7 +1590,7 @@ body.subpage .l-main .l-intro {
   height: 2.4rem;
   margin-right: 1.2rem;
   padding: 0;
-  border: 1px solid #988c2c;
+  border: 1px solid #afa86f;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1638,7 +1635,7 @@ body.subpage .l-main .l-intro {
   position: relative;
   width: 1.6rem;
   height: 1.6rem;
-  border: 1px solid #988c2c;
+  border: 1px solid #afa86f;
   border-radius: 0%;
   background: #faf7f1;
   cursor: pointer;
@@ -1779,7 +1776,7 @@ body.subpage .l-main .l-intro {
   max-width: 186px;
   height: 100%;
   border-radius: 50px 0 0 50px;
-  background: #000;
+  background: #222222;
   content: "NEWS";
   color: #fff;
   font-weight: 400;
@@ -2536,7 +2533,7 @@ p-about-message
   margin-top: 2rem;
 }
 .p-about-message__text {
-  color: #222222;
+  color: #000;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.6666666667;
@@ -2758,7 +2755,7 @@ body.staff-detail .wrap {
   letter-spacing: 0em;
 }
 .p-staff-detail__text {
-  color: #222222;
+  color: #000;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5714285714;
@@ -3184,7 +3181,7 @@ body.blog-detail .c-breadcrumbs {
   margin-top: 2rem;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.6666666667;
   font-family: "Noto Sans JP";
   letter-spacing: 0em;
 }
@@ -5590,6 +5587,7 @@ button.swiper-pagination-bullet {
   .p-career__top {
     margin-top: 11.4rem;
     font-size: 1.6rem;
+    line-height: 1;
   }
   .p-career__text {
     font-size: 1.6rem;
@@ -6035,7 +6033,8 @@ button.swiper-pagination-bullet {
     font-size: 13.6rem;
   }
   .l-section__title.-staff::before {
-    left: 10rem;
+    top: -81%;
+    left: -17.2%;
   }
   .l-section__title.-blog::before {
     top: -5rem;

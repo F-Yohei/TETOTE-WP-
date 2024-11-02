@@ -70,7 +70,7 @@ Template Name: staff page
                                             </div>
                                             <div class="p-staff__content">
                                                 <p class="p-staff__title">
-                                                    <span><?php echo CFS()->get('osccupation'); ?></span>
+                                                    <span><?php echo CFS()->get('occupation'); ?></span>
                                                     <span
                                                         class="p-staff__title--pl"><?php echo CFS()->get('year'); ?></span>
                                                 </p>

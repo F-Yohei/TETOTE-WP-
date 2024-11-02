@@ -8,7 +8,7 @@ Template Name: details page
 <!-- main -->
 <main class="l-main">
     <article>
-        <div id="js-top" class="p-hero">
+        <div id="js-top" class="p-hero -details">
             <div class="l-section__titleWrapper">
                 <h1 class="l-section__title">DETAILS</h1>
                 <h2 class="l-section__title--secondary">募集要項</h2>
