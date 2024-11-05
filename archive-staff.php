@@ -16,7 +16,7 @@ Template Name: staff page
             </div>
             <figure>
                 <picture>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/staff/staff-fv.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/staff/staff-fv.jpg" alt="">
                 </picture>
             </figure>
         </div>
@@ -59,7 +59,7 @@ Template Name: staff page
                                                             the_post_thumbnail('large'); ?>
                                                 <?php else : ?>
                                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
-                                                    alt="アイキャッチ画像がありません" />
+                                                    alt="アイキャッチ画像がありません">
                                                 <?php endif; ?>
                                             </picture>
                                         </figure>

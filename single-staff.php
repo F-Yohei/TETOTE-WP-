@@ -17,7 +17,7 @@ Template Name: single-staff page
                 the_post_thumbnail(array(286, 368)); ?>
                             <?php else : ?>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
-                                alt="アイキャッチ画像がありません" />
+                                alt="アイキャッチ画像がありません">
                             <?php endif; ?>
                         </picture>
                     </figure>
@@ -138,7 +138,7 @@ Template Name: single-staff page
                           the_post_thumbnail('large'); ?>
                                         <?php else : ?>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
-                                            alt="アイキャッチ画像がありません" />
+                                            alt="アイキャッチ画像がありません">
                                         <?php endif; ?>
                                     </picture>
                                 </figure>

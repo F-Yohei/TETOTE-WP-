@@ -16,7 +16,7 @@ Template Name: career page
             </div>
             <figure>
                 <picture>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/career/career-fv.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/career/career-fv.jpg" alt="">
                 </picture>
             </figure>
         </div>

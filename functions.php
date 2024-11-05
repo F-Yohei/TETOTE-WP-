@@ -48,41 +48,7 @@ function my_class_names($classes)
 }
 ?>
 
-<?php
-/*==============================================================
-ページごとにタイトルを設定
-==============================================================*/
-function mytheme_ini() {
-  add_theme_support( 'title-tag' );
-}
-add_action( 'after_setup_theme', 'mytheme_ini' );
 
-function my_document_title_parts($title){
-    if(is_home() || is_front_page()) {
-        $title['title'] = '採用特設サイト | 株式会社TETOTE';
-    } elseif( is_page('about-us') ) {
-        $title['title'] = 'TETOTEについて | 株式会社TETOTE';
-    } elseif( is_archive('staff') ) {
-        $title['title'] = '社員について | 株式会社TETOTE';
-    } elseif( is_archive('blog') ) {
-        $title['title'] = '採用ブログ | 株式会社TETOTE';
-    }elseif( is_page('benefits') ) {
-        $title['title'] = '福利厚生について | 株式会社TETOTE';
-    }elseif( is_page('career') ) {
-        $title['title'] = '研修制度とキャリアパス | 株式会社TETOTE';
-    }elseif( is_page('details') ) {
-        $title['title'] = '募集要項 | 株式会社TETOTE';
-    }elseif( is_page('faq') ) {
-        $title['title'] = 'よくある質問 | 株式会社TETOTE';
-    }elseif( is_page('entry') ) {
-        $title['title'] = 'エントリー | 株式会社TETOTE';
-    }elseif( is_page('entry-thanks') ) {
-        $title['title'] = 'エントリー完了 | 株式会社TETOTE';
-    }
-    return $title;
-};
-add_filter('document_title_parts', 'my_document_title_parts');
-?>
 
 
 <?php
@@ -174,6 +140,14 @@ function add_files()
     wp_enqueue_script(
       'faq',
       get_stylesheet_directory_uri() . '/assets/js/faq.bundle.js',
+      ['jquery'],
+      '1.0.0',
+      true
+    );
+  }  elseif (is_page('entry')) {
+    wp_enqueue_script(
+      'entry',
+      get_stylesheet_directory_uri() . '/assets/js/entry.bundle.js',
       ['jquery'],
       '1.0.0',
       true

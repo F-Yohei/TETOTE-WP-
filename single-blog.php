@@ -44,7 +44,7 @@ Template Name: single-blog page
                                         the_post_thumbnail(array(720, 411)); ?>
                                     <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
-                                        alt="アイキャッチ画像がありません" />
+                                        alt="アイキャッチ画像がありません">
                                     <?php endif; ?>
                                 </figure>
                                 <p class="p-blog-detail__introText"><?php echo CFS()->get('desc'); ?>

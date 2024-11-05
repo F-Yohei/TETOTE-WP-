@@ -16,7 +16,7 @@ Template Name: blog page
             </div>
             <figure>
                 <picture>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-fv.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog/blog-fv.jpg" alt="">
                 </picture>
             </figure>
         </div>
@@ -61,7 +61,7 @@ Template Name: blog page
                                                 the_post_thumbnail(array(156, 180)); ?>
                                     <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
-                                        alt="アイキャッチ画像がありません" />
+                                        alt="アイキャッチ画像がありません">
                                     <?php endif; ?>
                                 </figure>
                             </div>

@@ -16,7 +16,7 @@ Template Name: faq page
             </div>
             <figure>
                 <picture>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/faq/faq-fv.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/faq/faq-fv.jpg" alt="">
                 </picture>
             </figure>
         </div>

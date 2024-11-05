@@ -27,7 +27,7 @@ Template Name: TOP page
                             <figure>
                                 <picture>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/fv01.jpg"
-                                        alt="" width="1440px" height="822px" />
+                                        alt="" width="1440px" height="822px">
                                 </picture>
                             </figure>
                         </li>
@@ -35,7 +35,7 @@ Template Name: TOP page
                             <figure>
                                 <picture>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/fv02.jpg"
-                                        alt="" width="1440px" height="822px" />
+                                        alt="" width="1440px" height="822px">
                                 </picture>
                             </figure>
                         </li>
@@ -54,7 +54,7 @@ Template Name: TOP page
                                 <figure>
                                     <picture>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/home_slide_img01.jpg"
-                                            width="271" height="210" loading="lazy" alt="" />
+                                            width="271" height="210" loading="lazy" alt="">
                                     </picture>
                                 </figure>
                             </li>
@@ -62,7 +62,7 @@ Template Name: TOP page
                                 <figure>
                                     <picture>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/home_slide_img02.jpg"
-                                            loading="lazy" alt="" />
+                                            loading="lazy" alt="">
                                     </picture>
                                 </figure>
                             </li>
@@ -70,7 +70,7 @@ Template Name: TOP page
                                 <figure>
                                     <picture>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/home_slide_img03.jpg"
-                                            loading="lazy" alt="" />
+                                            loading="lazy" alt="">
                                     </picture>
                                 </figure>
                             </li>
@@ -138,7 +138,7 @@ Template Name: TOP page
                                                             the_post_thumbnail('large'); ?>
                                                 <?php else : ?>
                                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
-                                                    alt="アイキャッチ画像がありません" />
+                                                    alt="アイキャッチ画像がありません">
                                                 <?php endif; ?>
                                             </picture>
                                         </figure>
@@ -166,10 +166,12 @@ Template Name: TOP page
                         </ul>
                         <!-- 矢印を追加 -->
                         <div class="splide__arrows">
-                            <button class="splide__arrow splide__arrow--prev button prev"><span
-                                    class="arrow -prev"></span></button>
-                            <button class="splide__arrow splide__arrow--next button next"><span
-                                    class="arrow"></span></button></button>
+                            <button class="splide__arrow splide__arrow--prev button prev">
+                                <span class="arrow -prev"></span>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next button next">
+                                <span class="arrow"></span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -257,7 +259,7 @@ Template Name: TOP page
                                                 the_post_thumbnail(array(156, 180)); ?>
                                     <?php else : ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
-                                        alt="アイキャッチ画像がありません" />
+                                        alt="アイキャッチ画像がありません">
                                     <?php endif; ?>
                                 </figure>
                             </div>
@@ -275,7 +277,6 @@ Template Name: TOP page
                     </span>
                     VIEW MORE
                 </a>
-            </div>
             </div>
         </section>
         <!-- p-home-recruit -->

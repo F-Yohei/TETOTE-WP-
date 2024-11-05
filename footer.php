@@ -17,7 +17,7 @@
                 <figure class="l-footer-recruit__img js-parallax-img">
                     <picture>
                         <img srcset="<?php echo get_template_directory_uri(); ?>/assets/images/home/home_bg.jpg"
-                            media="(min-width: 769px)" type="image/jpg" />
+                            media="(min-width: 769px)" type="image/jpg">
                     </picture>
                 </figure>
             </div>
@@ -63,19 +63,19 @@
                     <li class="l-footer__snsItem">
                         <a href="<?php echo esc_url(home_url('')); ?>" class="l-footer__snsLink">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/facebook.svg"
-                                alt="" width="" height="" loading="lazy" decoding="async">
+                                alt="Facebookのアイコン" width="" height="" loading="lazy" decoding="async">
                         </a>
                     </li>
                     <li class="l-footer__snsItem">
                         <a href="<?php echo esc_url(home_url('')); ?>" class="l-footer__snsLink">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/twitter.svg"
-                                alt="" width="" height="" loading="lazy" decoding="async">
+                                alt="Twitterのアイコン" width="" height="" loading="lazy" decoding="async">
                         </a>
                     </li>
                     <li class="l-footer__snsItem">
                         <a href="<?php echo esc_url(home_url('')); ?>" class="l-footer__snsLink">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/youtube.svg"
-                                alt="" width="" height="" loading="lazy" decoding="async">
+                                alt="YouTubeのアイコン" width="" height="" loading="lazy" decoding="async">
                         </a>
                     </li>
                 </ul>
@@ -83,7 +83,7 @@
             <div class="l-footer__logo">
                 <a href="<?php echo esc_url(home_url('')); ?>" class="l-footer__logoLink">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/footer_logo.svg"
-                        alt="TETOTE株式会社" />
+                        alt="TETOTE株式会社">
                 </a>
                 <div class="l-footer__policy">
                     <a href="<?php echo esc_url(home_url('')); ?>" class="l-footer__policyLink">© 2024 TETOTE All Right
@@ -94,7 +94,6 @@
     </div>
 </footer>
 <!-- /footer -->
-</div>
 <?php wp_footer(); ?>
 </body>
 

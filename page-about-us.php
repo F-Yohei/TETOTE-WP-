@@ -16,7 +16,7 @@ Template Name: about page
             </div>
             <figure>
                 <picture>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/about-fv.jpg" alt="" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/about-fv.jpg" alt="">
                 </picture>
             </figure>
         </div>
@@ -96,8 +96,8 @@ Template Name: about page
                 <div class="p-about-message__wrapper">
                     <div class="p-about-message__box--left">
                         <figure class="p-about-message__img u-pc">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/ceo.jpg" alt=""
-                                width="" height="" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/ceo.jpg"
+                                alt="代表者写真" width="" height="" loading="lazy">
                         </figure>
                         <p class="p-about-message__heading">あなたがやりたいこと<br>
                             それを全力でサポートできる、<br>
@@ -115,7 +115,7 @@ Template Name: about page
                         <figure>
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/ceo-name.svg"
-                                    alt="代表者の名前" />
+                                    alt="田中浩二郎">
                             </picture>
                         </figure>
                     </div>
@@ -138,7 +138,7 @@ Template Name: about page
                         <figure class="p-about-business__img">
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/consulting.jpg"
-                                    alt="コンサルティング" loading="lazy">
+                                    alt="コンサルティング事業" loading="lazy">
                             </picture>
                         </figure>
                     </div>
@@ -151,7 +151,7 @@ Template Name: about page
                         <figure class="p-about-business__img">
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/solution-sales.jpg"
-                                    alt="ソリューション" width="" height="" loading="lazy">
+                                    alt="ソリューション営業事務" width="" height="" loading="lazy">
                             </picture>
                         </figure>
                     </div>
@@ -166,7 +166,7 @@ Template Name: about page
                         <figure class="p-about-business__img">
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-us/desiner.jpg"
-                                    alt="デザイナー" width="" height="" loading="lazy">
+                                    alt="業務系システム開発事業" width="" height="" loading="lazy">
                             </picture>
                         </figure>
                     </div>
@@ -213,6 +213,7 @@ Template Name: about page
                         </tr>
                     </table>
                 </div>
+            </div>
         </section>
         <!-- /sec-company-info -->
         <!-- /section-about -->

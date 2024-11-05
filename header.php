@@ -2,24 +2,23 @@
 <html lang="ja">
 
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/ fb# website: http://ogp.me/ns/website#">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="format-detection" content="email=no, telephone=no, address=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex,nofollow" />
-    <meta name="description" content="テクノロジーで社会課題を解決する。AIやビッグデータ分析などの技術を活用した社会課題解決サービスを提供するTETOTEの採用サイト。" />
-    <meta name="keywords" content="" />
-    <link rel="canonical" href="./" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="email=no, telephone=no, address=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="./">
     <!-- favicon -->
     <link rel="shortcut icon"
-        href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon/tetote-favicon.svg" />
+        href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon/tetote-favicon.svg">
     <!-- apple-touch-icon -->
     <link rel="apple-touch-icon" sizes="180x180"
-        href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon/tetote-favicon.ico" />
+        href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon/tetote-favicon.ico">
     <link rel="icon" href="/icon.png">
     <!-- font -->
     <!-- style.css -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,9 +49,9 @@
                         <figure>
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo01.svg"
-                                    alt="ロゴ" id="logo" />
+                                    alt="ロゴ" id="logo">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
-                                    alt="ロゴ" id="logo2" style="display:none" />
+                                    alt="ロゴ" id="logo2" style="display:none">
                             </picture>
                         </figure>
                     </a>
@@ -60,7 +59,7 @@
                         <figure>
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
-                                    alt="ロゴ" />
+                                    alt="ロゴ">
                             </picture>
                         </figure>
                     </a>
@@ -70,7 +69,7 @@
                         <figure>
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
-                                    alt="ロゴ" />
+                                    alt="ロゴ">
                             </picture>
                         </figure>
                     </a>
@@ -102,7 +101,7 @@
                                 <figure>
                                     <picture>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
-                                            alt="ロゴ" />
+                                            alt="ロゴ">
                                     </picture>
                                 </figure>
                             </a>
@@ -127,12 +126,12 @@
                                             <p class="l-menu__title">BLOG</p>
                                             <p class="l-menu__subTitle">採用ブログ</p>
                                         </a>
+                                    </li>
                                     <li class="l-menu__item -button u-pc">
                                         <a href="<?php echo esc_url(home_url('details')); ?>"
                                             class="l-menu-button__link -recruit">募集要項</a>
                                     </li>
                                 </ul>
-                                </li>
                                 <ul class="l-menu__subList--right">
                                     <li class="l-menu__item">
                                         <a href="<?php echo esc_url(home_url('benefits')); ?>" class="l-menu__link">
@@ -189,9 +188,9 @@
                         <figure>
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo01.svg"
-                                    alt="ロゴ" id="logo-sub" />
+                                    alt="ロゴ" id="logo-sub">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
-                                    alt="ロゴ" id="logo2-sub" style="display:none" />
+                                    alt="ロゴ" id="logo2-sub" style="display:none">
                             </picture>
                         </figure>
                     </a>
@@ -199,7 +198,7 @@
                         <figure>
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
-                                    alt="ロゴ" />
+                                    alt="ロゴ">
                             </picture>
                         </figure>
                     </a>
@@ -209,7 +208,7 @@
                         <figure>
                             <picture>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
-                                    alt="ロゴ" />
+                                    alt="ロゴ">
                             </picture>
                         </figure>
                     </a>
@@ -240,7 +239,7 @@
                                 <figure>
                                     <picture>
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/header_logo02.svg"
-                                            alt="ロゴ" />
+                                            alt="ロゴ">
                                     </picture>
                                 </figure>
                             </a>
@@ -265,11 +264,11 @@
                                             <p class="l-menu__title">BLOG</p>
                                             <p class="l-menu__subTitle">採用ブログ</p>
                                         </a>
+                                    </li>
                                     <li class="l-menu__item -button u-pc">
                                         <a href="<%= path %>/details" class="l-menu-button__link -recruit">募集要項</a>
                                     </li>
                                 </ul>
-                                </li>
                                 <ul class="l-menu__subList--right">
                                     <li class="l-menu__item">
                                         <a href="<?php echo esc_url(home_url('benefits')); ?>" class="l-menu__link">
@@ -291,7 +290,8 @@
                                     </li>
                                     <li class="l-menu__item -button u-pc">
                                         <a href="<?php echo esc_url(home_url('entry')); ?>"
-                                            class="l-menu-button__link -entry">ENTRY</a>
+                                            class="l-menu-button__link -entry">ENTRY
+                                        </a>
                                     </li>
                                 </ul>
                             </ul>
@@ -300,11 +300,13 @@
                                 <ul class="l-menu-button__list">
                                     <li class="l-menu-button__item">
                                         <a href="<?php echo esc_url(home_url('details')); ?>"
-                                            class="l-menu-button__link -recruit">募集要項</a>
+                                            class="l-menu-button__link -recruit">募集要項
+                                        </a>
                                     </li>
                                     <li class="l-menu-button__item">
                                         <a href="<?php echo esc_url(home_url('entry')); ?>"
-                                            class="l-menu-button__link -entry">ENTRY</a>
+                                            class="l-menu-button__link -entry">ENTRY
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -315,3 +317,4 @@
                 </div>
             </div>
         </div>
+    </div>

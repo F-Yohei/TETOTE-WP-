@@ -17,7 +17,7 @@ Template Name: benefits page
             <figure>
                 <picture>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/benefits/benefits-fv.jpg"
-                        alt="" />
+                        alt="">
                 </picture>
             </figure>
         </div>
