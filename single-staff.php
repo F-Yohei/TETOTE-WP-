@@ -11,7 +11,7 @@ Template Name: single-staff page
         <div id="js-top" class="p-mv">
             <div class="p-staff-detail__item">
                 <div class="p-staff-detail__img">
-                    <figure class="p-staff-detail__fig">
+                    <figure class="p-staff-detail__fig u-pc">
                         <picture>
                             <?php if (has_post_thumbnail()) :
                 the_post_thumbnail(array(286, 368)); ?>
@@ -26,6 +26,16 @@ Template Name: single-staff page
                             <h2 class="p-staff-detail__catch"><?php echo CFS()->get('message-top'); ?></h2>
                             <p class="p-staff-detail__subCatch"><?php echo CFS()->get('message-bottom'); ?></p>
                         </div>
+                        <figure class="p-staff-detail__fig u-sp">
+                            <picture>
+                                <?php if (has_post_thumbnail()) :
+                the_post_thumbnail(array(286, 368)); ?>
+                                <?php else : ?>
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/no-image.png"
+                                    alt="アイキャッチ画像がありません">
+                                <?php endif; ?>
+                            </picture>
+                        </figure>
                         <div class="p-staff-detail__content">
                             <p class="p-staff-detail__title"><?php echo CFS()->get('occupation'); ?></p>
                             <h3 class="p-staff-detail__name">

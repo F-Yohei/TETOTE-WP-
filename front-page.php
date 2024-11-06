@@ -13,12 +13,25 @@ Template Name: TOP page
             <h1 class="p-home-mv__catch">BECOME A<br>CHALLENGER.</h1>
             <h2 class="p-home-mv__subCatch">君の挑戦が、意思が、未来を変える</h2>
             <div class="p-home-mv__blog">
-                <a href=".//blog">
-                    <p class="p-home-mv__blogText">2024年度働きやすさランキング一位を取得しました！！
+                <?php
+                    $args = array(
+                        'post_type' => 'blog',
+                        'posts_per_page' => 1,
+                    );
+                    $the_query = new WP_Query($args);
+                    ?>
+                <?php if ($the_query->have_posts()): ?>
+                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                <a href="<?php the_permalink(); ?>">
+                    <p class="p-home-mv__blogText"><?php echo CFS()->get('title'); ?>
                         <span class="p-home-mv__nextWrapper"><span class="p-home-mv__next u-pc">VIEW MORE<span
                                     class="p-home-mv__arrow u-pc"></span></span></span>
                     </p>
                 </a>
+                <?php endwhile; ?>
+                <?php else: ?>
+                <!-- ここに投稿がない場合の記述 -->
+                <?php endif; ?>
             </div>
             <div id="splide1" class="splide" aria-label="carousel">
                 <div class="splide__track">

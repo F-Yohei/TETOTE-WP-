@@ -1728,7 +1728,7 @@ body.subpage .l-main .l-intro {
   line-height: 1.25;
   font-family: Viga;
   letter-spacing: 0em;
-  text-shadow: 0px 4px 8px #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .p-home-mv__subCatch {
   -webkit-clip-path: polygon(0 0, 100% 0, 94% 100%, 0 100%);
@@ -2676,8 +2676,11 @@ body.staff-detail .p-mv {
 body.staff-detail .wrap {
   overflow-x: initial;
 }
-.p-staff-detail__fig {
-  display: none;
+.p-staff-detail__fig.u-pc picture img {
+  -o-object-fit: cover;
+  width: 100%;
+  height: auto;
+     object-fit: cover;
 }
 .p-staff-detail__textBox {
   padding: 2rem 1.6rem 2rem 1.6rem;
@@ -2708,6 +2711,15 @@ body.staff-detail .wrap {
   line-height: 1;
   font-family: "Noto Sans JP";
   letter-spacing: 0em;
+}
+.p-staff-detail__fig.u-sp {
+  margin-top: 2rem;
+}
+.p-staff-detail__fig.u-sp picture img {
+  -o-object-fit: cover;
+  width: 60%;
+  height: auto;
+     object-fit: cover;
 }
 .p-staff-detail__content {
   margin-top: 2rem;
@@ -5212,19 +5224,11 @@ button.swiper-pagination-bullet {
   .l-form__inputWrapper {
     margin-top: 0;
   }
-  .l-form__inputWrapper input {
+  .l-form__inputWrapper .wpcf7-form-control-wrap input {
     width: 16.8rem !important;
-  }
-  .l-form__inputWrapper .wpcf7-form-control-wrap {
-    width: initial;
   }
   .l-form__padding {
     padding-left: 1rem;
-  }
-  .l-form__birthday--bottom {
-    display: -webkit-box;
-    display: flex;
-    margin-top: 1.5rem;
   }
   .l-form__birthday--bottom .l-form__inputWrapper:first-of-type {
     margin-right: 2.4rem;
@@ -5241,7 +5245,7 @@ button.swiper-pagination-bullet {
     margin-top: 0;
   }
   .l-form__dd select {
-    width: 16.8rem;
+    width: 16.8rem !important;
   }
   .l-form__dd.-radio-sec .wpcf7-form-control-wrap .wpcf7-form-control {
     margin-top: 1.1rem;
@@ -5428,9 +5432,6 @@ button.swiper-pagination-bullet {
   }
   .p-staff-detail__item {
     padding: 4.2rem 0;
-  }
-  .p-staff-detail__textBox {
-    padding: 2rem 4rem 2rem 4rem;
   }
   .p-staff-detail__catch {
     font-size: 3.6rem;
@@ -5695,6 +5696,14 @@ button.swiper-pagination-bullet {
 @media screen and (min-width: 1024px) {
   .c-breadcrumbs__list {
     padding-left: 0.1rem;
+  }
+  .p-staff-detail__fig.u-pc {
+    width: 25%;
+  }
+  .p-staff-detail__textBox {
+    width: 42% !important;
+    margin-right: 8.5rem;
+    padding: 0;
   }
   body.blog-detail .c-breadcrumbs {
     margin-top: 6rem;
@@ -6342,24 +6351,8 @@ button.swiper-pagination-bullet {
     width: 73%;
     margin-right: 5.4rem;
   }
-  .p-staff-detail__img {
-    -webkit-box-pack: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -webkit-box-align: center;
-    display: -webkit-box;
-    display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: center;
-  }
-  .p-staff-detail__fig {
-    display: block;
-  }
-  .p-staff-detail__textBox {
-    width: 42%;
-    margin-right: 8.5rem;
-    padding: 0;
+  .p-staff-detail__fig.u-pc {
+    width: 20%;
   }
   .p-staff-detail__contentItem::before {
     position: absolute;
@@ -6508,6 +6501,20 @@ button.swiper-pagination-bullet {
   .l-section__title.-benefit {
     text-align: center;
   }
+  .l-form__inputWrapper .wpcf7-form-control-wrap input {
+    width: 15.6rem;
+  }
+  .l-form__inputWrapper .wpcf7-form-control-wrap {
+    width: initial;
+  }
+  .l-form__birthday--bottom {
+    display: -webkit-box;
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  .l-form__dd select {
+    width: 15.6rem;
+  }
   .p-home-blog__media {
     margin-top: 1.8rem;
   }
@@ -6530,6 +6537,28 @@ button.swiper-pagination-bullet {
   .p-staff__textBox {
     bottom: -7rem;
   }
+  .p-staff-detail__img {
+    -webkit-box-pack: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-box-align: center;
+    display: -webkit-box;
+    display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+    padding: 2rem 4rem 2rem 4rem;
+  }
+  .p-staff-detail__fig.u-pc {
+    display: block !important;
+  }
+  .p-staff-detail__textBox {
+    width: 86%;
+    padding: 0;
+  }
+  .p-staff-detail__fig.u-sp {
+    display: none !important;
+  }
   .p-staff-detail__comment {
     width: 74%;
   }
@@ -6548,6 +6577,12 @@ button.swiper-pagination-bullet {
   body.subpage .l-hamburger__toggle {
     top: 3.4rem;
     right: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (min-width: 1024px) {
+  .p-staff-detail__img {
+    padding: 0;
   }
 }
 
